@@ -1,0 +1,53 @@
+#
+# Copyright (c) 2020 Peterson Yuhala, IIUN
+#
+#!/bin/bash
+
+# You must be in the graal-sgx directory as root here: ie make sure PWD = graal-sgx dir
+APP_PKG="smartc"
+SVM_DIR="$PWD/substratevm"
+SGX_DIR="$PWD/sgx"
+SGX_ANNOTATIONS="$PWD/substratevm/annotations/sgx"
+APP_DIR="$PWD/substratevm/smartc"
+JAVAC="$JAVA_HOME/bin/javac"
+
+#TODO put annotations in a com.oracle.svm.graalsgx package
+#/home/petman/projects/graal-sgx/substratevm/src/com.oracle.svm.graalsgx/src/com/oracle/svm/graalsgx/Person.java
+# Give this file x permission if if does not have. Its present perm will probably be: rw-rw-r-- (664). Change to 764
+# chmod 764 /path/to/graal-sdk.jar
+GRAAL_HOME="$PWD/sdk/latest_graalvm_home/jre/lib/boot/graal-sdk.jar"
+
+
+# native image build options
+SVM_OPTS="-H:+UseOnlyWritableBootImageHeap"
+
+#clean old objects and rebuild svm if changed
+OLD_OBJS=(/tmp/main.o main.so $APP_DIR/*.class $SGX_DIR/Enclave/graalsgx/*.o $SGX_DIR/App/graalsgx/*.o $SGX_ANNOTATIONS/graal-sgx.jar $APP_DIR/$APP_PKG.jar)
+cd $SVM_DIR
+echo "---------------Removing old objects -----------"
+for obj in $OLD_OBJS;
+do
+rm $obj
+done
+mx build
+
+#compile sgx annotations
+$JAVAC -sourcepath $SGX_ANNOTATIONS -cp $GRAAL_HOME:$SVM_DIR $SGX_ANNOTATIONS/*.java
+$JAVA_HOME/bin/jar cvf $SGX_ANNOTATIONS/graal-sgx.jar $SGX_ANNOTATIONS/*
+chmod 764 $SGX_ANNOTATIONS/graal-sgx.jar
+
+#compile app classes
+$JAVAC -sourcepath $APP_DIR -cp $GRAAL_HOME:$SVM_DIR:$APP_DIR $APP_DIR/Main.java
+#$JAVA_HOME/bin/jar cvf $APP_DIR/smartc.jar $APP_DIR/*
+#chmod 764 $APP_DIR/smartc.jar
+
+# compile and build new native image
+# echo $APP_DIR
+#$JAVAC -sourcepath . -cp $GRAAL_HOME:$SGX_ANNOTATIONS/graal-sgx.jar:$APP_DIR/smartc.jar Main.java 
+mx native-image --shared $SVM_OPTS $APP_PKG.Main
+
+#copy new created object file to sgx module
+cp /tmp/main.o $SGX_DIR/Enclave/graalsgx/ 
+cp /tmp/main.o $SGX_DIR/App/graalsgx/
+#copy generated headers to sgx module; graal entry points are defined here
+mv $SVM_DIR/*.h $SGX_DIR/Include/

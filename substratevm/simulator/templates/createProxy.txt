@@ -1,0 +1,13 @@
+
+Secure0 obj = new Secure0("insec-in",0);
+String param = "";
+for (int i = 0;i < 32; i++){            
+    param += "A";
+}
+
+for(int i = 0;i < numProxies;i++){  
+    obj.doSomething_Secure0(param);
+}
+
+    
+

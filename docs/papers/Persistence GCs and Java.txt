@@ -1,0 +1,51 @@
+After watching this PIRL video I had some thoughts on the topic of Persistence and GC in Java:
+https://pirl.nvsl.io/2019/10/22/adding-persistence-to-java/
+
+Data placement:
+Mario Wolczko talks about having multiple "regions" for persistent and volatile data. This makes sense. If you think about it, it already kind of works like that today for file systems: we open a file in a file system by using a name and then place persistent data in the file. There are different files to hold different kinds of data, therefore, it makes sense to have different regions to hold different data. The files may be on different filesystems or different media.
+The method they chose to select the placement is also reasonable. Setting the context of the "region" and then all allocations made within that context are made on that particular region. C++ has a slightly more flexible approach to this where it's possible to pass an Allocator instance to STL containers to solve the problem of internal allocations. I believe that some persistent data structures need to allocate (temporary) volatile data, and the Java approach that Mario Wolczko is talking about, will not allow for that, but it's likely a small use-case, so that's fine.
+The important thing is that choosing which data is persistent and which data is volatile, is a decision that can not be made automatically. It's the user/developer that has to chose it, and there has to be an easy-to-use mechanism to allow for that choice. The "region" approach he describes serves that purpose.
+
+Pointer rules:
+At some point Mario Wolczko talks about the rules for pointers:
+1) Data in the volatile regions can point to persistent data.
+2) Data in a persistent region can not point to volatile data.
+3) Data in a persistent region can point to the same persistent region.
+4) Data in a persistent region can not point directly to a different persistent region (though a handle mechanism may exist).
+These rules make sense. A persistent region may not always be placed in the same place in memory when the mmap() is done, which imposes rules 2) and 4). Not all regions may always be available at a later time, for example, if one of the NV-DIMMs is removed form the system but the others remain, which imposes rule 4).
+Having position-independent-pointers (an offset based on the beginning of the mmaped region) instead of raw pointers is also fine. It's a limitation of the mmap API and there's not much that can be done about it.
+PMDK solves the problem of having different regions mmaped at different places in memory upon restart by having all pointers be "fat pointers" 128 bit wide, where part is dedicated to the offset and another part as an identifier of the mmapped region. Mario didn't talk about implementation details, but I guess most of this can be made on the hotspot, hidden away from the user/developer.
+However, it's pretty hard to enforce all these rules at compile time. I made a couple of tries in C/C++ and it has be done at the compiler level (or hotspot for Java) but it's really challenging. In Java it may be way easier than C/C++, but may be still challenging. 
+Anyways, enforcing these rules at run-time is easy, just have tagged pointers or something. It's just very inconvenient to the user/developer to have an exception/error only when the pointer is actually accessed and the rule violated. It's doable either way, it's just a matter of engineering effort.
+
+Persistence:
+This part I don't really agree.
+First thing is that from a durability point of view, a checkpoint is really just a transaction that commits when we call "checkpoint()" and starts a new transaction immediately after. A checkpoint is a semantical "subset" of a transaction: if you can make transactions, you can make checkpoints, but if you can make checkpoints it doesn’t mean you can make transactions.
+Mario's approach to providing durability is to let the user/developer call "checkpoint()" when she wants to, and internally the system will make a new replica. It was a bit unclear to me if their system makes a full copy of the used objects in the region (like Romulus) or if it copies only the newly created objects and they have a Copy-On-Write (COW) mechanism for any modification to a persistent object. It seems the later, but it's unclear, and in that case, there is no easy way to discard (very) old versions. 
+I guess it will be the checkpoint mechanism which when it's running out of space in the persistent region will inform the GC to clean the K oldest versions. If this is so, then it's a bad design because it assumes the GC can do that job fast enough for a quick checkpointing application, and time and again DBMS with MVCC (multi-version-concurrency-control) have shown this isn't true when writing to SSD and therefore, it's even less likely to be true when writing to PM which is much faster than SSD. IMO this is a bad design and I would stay away from it.
+There are alternatives, basically any PTM you want can be made into a checkpoint mechanism, or even given explicit transaction semantics, which I would argue are just as easy to reason about for the user/developer as a checkpoint. However, most PTMs need a logging mechanism and in Java that means having the hotspot intercept every store to the persistent region and make a log of it (undo/redo/cow/shadow-copy). This part is important because it relates to the GC
+
+GC:
+Now we get to the fun part  :)
+A tracing GC is a simple way to solve the problem of leaking during allocation of persistent objects. Upon restart, just traverse all objects reachable from the root pointers (for example, mark-and-sweep) and whatever objects are unreachable, can be re-used. The same logic can be used for runtime as well, to recycle unused objects, and that's what the Java GC does (I'm oversimplifying).
+There are however slightly different scenarios:
+a) Object in a persistent region, linked by an object in the same persistent region;
+b) Object in a persistent region, linked by an object in another persistent region;
+c) Object in a persistent region, linked by an object in a volatile region;
+Notice there are no persistent objects pointing to volatile objects because that's disallowed in the rules mentioned above.
+
+Scenario a) is the most obvious one and tracing GC seems the right answer here, but some care is need. If mark-and-sweep is used, that will imply marking every (reachable) object during a run, which can be slow because PM is not as fast as DRAM, even if the marking doesn't actually need to flushed. Then there is the issue of clearing the marking if a crash occurs during it, but it  can be solved by having a different marking for the runtime collection run versus the marking of a post-crash-and-restart collection run. 
+Another vector is that seen as the transactional/checkpoint system is already likely keeping track of all modifications done, it should be relatively easy (in the Java hotspot) to figure out which of those modifications are pointers and then _maybe_ use that information to figure out which objects have become unreachable without having to scan large chunks of memory. In other words, the transaction log contains the list of pointers modified during a transaction and maybe knowing this will help in making a more efficient GC. Not sure if/how useful that is, it's just a thought.
+
+Scenario b) can be ignored on a first approach and assume there is a single persistent region. Later, it can be addressed but it kind of depends on what guarantees are given: Do we retire an object even if there is a handle on another persistent region to it, or not? If not, then each "handle" is a potential root pointer which must be stored somewhere. Where are the handles stored for each region? On a specific metadata location in the region? How to make them failure-resilient? These are non-trivial questions, but it's doable.
+
+Scenario c) is important and must be handled properly. We can't re-use an object if there is a link to it in volatile memory. This means that the GC of the persistent region _must_ scan not just the root pointers of the persistent memory but also the reachable objects in the volatile region. It kind of implies that whatever GC mechanism is devised for the persistent region, it is either a component of the volatile GC or must have a strong interaction with the volatile GC to figure out if the persistent objects are reachable from volatile objects.
+This kind of leads me to the conclusion that the GC that handles the run in the post-crash-and-restart situation can be a completely different piece of software (if need be), but the runtime GC of the persistent objects requires a tight integration with the existing volatile GC in the JVM. Obviously, the objects in the persistent region are java objects, so a lot of re-use of components and code of the volatile GC was implied.
+
+
+My conclusions:
+- The choice of transaction/checkpoint persistent technique has some implications on how the persistent GC will work, and it's this persistent technique that is likely the dominant factor in performance, not the GC;
+- The GC that runs post-crash-and-restart does not have to be the same GC that runs at runtime, and even if it is the same, it may have to do things in a slightly different way;
+- The runtime GC for persistent memory must scan also volatile objects, which means it will require a tight integration with (one of the) current GCs in the JVM;
+
+

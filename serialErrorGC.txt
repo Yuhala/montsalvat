@@ -1,0 +1,825 @@
+[parse_dyn /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:176] dynamic tag = 19, ptr = 9027f0
+[parse_dyn /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:176] dynamic tag = 1b, ptr = 10
+[parse_dyn /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:176] dynamic tag = 1a, ptr = 902800
+[parse_dyn /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:176] dynamic tag = 1c, ptr = 40
+[parse_dyn /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:176] dynamic tag = 6ffffef5, ptr = 2e8
+[parse_dyn /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:176] dynamic tag = 5, ptr = 3e0
+[parse_dyn /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:176] dynamic tag = 6, ptr = 320
+[parse_dyn /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:176] dynamic tag = a, ptr = 78
+[parse_dyn /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:176] dynamic tag = b, ptr = 18
+[parse_dyn /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:176] dynamic tag = 15, ptr = 0
+[parse_dyn /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:176] dynamic tag = 3, ptr = 902fc0
+[parse_dyn /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:176] dynamic tag = 7, ptr = 4a0
+[parse_dyn /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:176] dynamic tag = 8, ptr = 2a228
+[parse_dyn /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:176] dynamic tag = 9, ptr = 18
+[parse_dyn /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:176] dynamic tag = 16, ptr = 0
+[parse_dyn /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:176] dynamic tag = 6ffffffc, ptr = 468
+[parse_dyn /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:176] dynamic tag = 6ffffffd, ptr = 2
+[parse_dyn /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:176] dynamic tag = 18, ptr = 0
+[parse_dyn /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:176] dynamic tag = 6ffffffb, ptr = 8000001
+[parse_dyn /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:176] dynamic tag = 6ffffff0, ptr = 458
+[parse_dyn /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:176] dynamic tag = 6ffffff9, ptr = 1c15
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [0] : sh_addr = 0, sh_size = 0, sh_offset = 0, sh_name = 0
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [1] .interp: sh_addr = 2a8, sh_size = 1c, sh_offset = 2a8, sh_name = 1b
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [2] .note.gnu.build-id: sh_addr = 2c4, sh_size = 24, sh_offset = 2c4, sh_name = 23
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [3] .gnu.hash: sh_addr = 2e8, sh_size = 38, sh_offset = 2e8, sh_name = 36
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [4] .dynsym: sh_addr = 320, sh_size = c0, sh_offset = 320, sh_name = 40
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [0] : sh_addr = 0, sh_size = 0, sh_offset = 0, sh_name = 0
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [1] .interp: sh_addr = 2a8, sh_size = 1c, sh_offset = 2a8, sh_name = 1b
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [2] .note.gnu.build-id: sh_addr = 2c4, sh_size = 24, sh_offset = 2c4, sh_name = 23
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [3] .gnu.hash: sh_addr = 2e8, sh_size = 38, sh_offset = 2e8, sh_name = 36
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [4] .dynsym: sh_addr = 320, sh_size = c0, sh_offset = 320, sh_name = 40
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [5] .dynstr: sh_addr = 3e0, sh_size = 78, sh_offset = 3e0, sh_name = 48
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [0] : sh_addr = 0, sh_size = 0, sh_offset = 0, sh_name = 0
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [1] .interp: sh_addr = 2a8, sh_size = 1c, sh_offset = 2a8, sh_name = 1b
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [2] .note.gnu.build-id: sh_addr = 2c4, sh_size = 24, sh_offset = 2c4, sh_name = 23
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [3] .gnu.hash: sh_addr = 2e8, sh_size = 38, sh_offset = 2e8, sh_name = 36
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [4] .dynsym: sh_addr = 320, sh_size = c0, sh_offset = 320, sh_name = 40
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [5] .dynstr: sh_addr = 3e0, sh_size = 78, sh_offset = 3e0, sh_name = 48
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [6] .gnu.version: sh_addr = 458, sh_size = 10, sh_offset = 458, sh_name = 50
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [7] .gnu.version_d: sh_addr = 468, sh_size = 38, sh_offset = 468, sh_name = 5d
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [8] .rela.dyn: sh_addr = 4a0, sh_size = 2a228, sh_offset = 4a0, sh_name = 6c
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [0] : sh_addr = 0, sh_size = 0, sh_offset = 0, sh_name = 0
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [0] : sh_addr = 0, sh_size = 0, sh_offset = 0, sh_name = 0
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [1] .interp: sh_addr = 2a8, sh_size = 1c, sh_offset = 2a8, sh_name = 1b
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [2] .note.gnu.build-id: sh_addr = 2c4, sh_size = 24, sh_offset = 2c4, sh_name = 23
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [3] .gnu.hash: sh_addr = 2e8, sh_size = 38, sh_offset = 2e8, sh_name = 36
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [4] .dynsym: sh_addr = 320, sh_size = c0, sh_offset = 320, sh_name = 40
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [5] .dynstr: sh_addr = 3e0, sh_size = 78, sh_offset = 3e0, sh_name = 48
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [6] .gnu.version: sh_addr = 458, sh_size = 10, sh_offset = 458, sh_name = 50
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [7] .gnu.version_d: sh_addr = 468, sh_size = 38, sh_offset = 468, sh_name = 5d
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [8] .rela.dyn: sh_addr = 4a0, sh_size = 2a228, sh_offset = 4a0, sh_name = 6c
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [9] .plt: sh_addr = 2b000, sh_size = 10, sh_offset = 2b000, sh_name = 76
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [10] .plt.got: sh_addr = 2b010, sh_size = 10, sh_offset = 2b010, sh_name = 7b
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [11] .text: sh_addr = 2c000, sh_size = 3cd1c5, sh_offset = 2c000, sh_name = 84
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [12] .nipx: sh_addr = 3f91c5, sh_size = cb0, sh_offset = 3f91c5, sh_name = 8a
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [13] .rodata: sh_addr = 3fa000, sh_size = 86b3, sh_offset = 3fa000, sh_name = 90
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [14] .svm_heap: sh_addr = 403000, sh_size = 4f4dc0, sh_offset = 403000, sh_name = 98
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [15] .niprod: sh_addr = 8f7dc0, sh_size = 8c0, sh_offset = 8f7dc0, sh_name = a2
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [16] .eh_frame_hdr: sh_addr = 8f8680, sh_size = 18bc, sh_offset = 8f8680, sh_name = aa
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [17] .eh_frame: sh_addr = 8f9f40, sh_size = 6ed8, sh_offset = 8f9f40, sh_name = b8
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [18] .gcc_except_table: sh_addr = 900e18, sh_size = 89, sh_offset = 900e18, sh_name = c2
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [19] .init_array: sh_addr = 9027f0, sh_size = 10, sh_offset = 9017f0, sh_name = d4
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [20] .fini_array: sh_addr = 902800, sh_size = 40, sh_offset = 901800, sh_name = e0
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [21] .data.rel.ro: sh_addr = 902840, sh_size = 5e0, sh_offset = 901840, sh_name = ec
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [22] .dynamic: sh_addr = 902e20, sh_size = 1a0, sh_offset = 901e20, sh_name = f9
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [23] .got: sh_addr = 902fc0, sh_size = 28, sh_offset = 901fc0, sh_name = 7f
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [24] .data: sh_addr = 903000, sh_size = 1c04, sh_offset = 902000, sh_name = 102
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [25] .nipd: sh_addr = 904c04, sh_size = 8, sh_offset = 903c04, sh_name = 108
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [26] .bss: sh_addr = 904c20, sh_size = 102c0, sh_offset = 903c0c, sh_name = 10e
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [27] .comment: sh_addr = 0, sh_size = 623, sh_offset = 903c0c, sh_name = 113
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [28] .note.sgxmeta: sh_addr = 0, sh_size = 501c, sh_offset = 904230, sh_name = 11c
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [29] .debug_aranges: sh_addr = 0, sh_size = 58c0, sh_offset = 909250, sh_name = 12a
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [30] .debug_pubnames: sh_addr = 0, sh_size = 2ca7, sh_offset = 90eb10, sh_name = 139
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [31] .debug_info: sh_addr = 0, sh_size = bdf79, sh_offset = 9117b7, sh_name = 149
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [32] .debug_abbrev: sh_addr = 0, sh_size = 10ecf, sh_offset = 9cf730, sh_name = 155
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [33] .debug_line: sh_addr = 0, sh_size = 1db76, sh_offset = 9e05ff, sh_name = 163
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [34] .debug_frame: sh_addr = 0, sh_size = 3a18, sh_offset = 9fe178, sh_name = 16f
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [35] .debug_str: sh_addr = 0, sh_size = 119b1, sh_offset = a01b90, sh_name = 17c
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [36] .debug_loc: sh_addr = 0, sh_size = 26957, sh_offset = a13541, sh_name = 187
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [37] .debug_ranges: sh_addr = 0, sh_size = b1e0, sh_offset = a39e98, sh_name = 192
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [38] .symtab: sh_addr = 0, sh_size = 2ba10, sh_offset = a45078, sh_name = 1
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [39] .strtab: sh_addr = 0, sh_size = 80abc, sh_offset = a70a88, sh_name = 9
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [40] .shstrtab: sh_addr = 0, sh_size = 1a0, sh_offset = af1544, sh_name = 11
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [0] : sh_addr = 0, sh_size = 0, sh_offset = 0, sh_name = 0
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [1] .interp: sh_addr = 2a8, sh_size = 1c, sh_offset = 2a8, sh_name = 1b
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [2] .note.gnu.build-id: sh_addr = 2c4, sh_size = 24, sh_offset = 2c4, sh_name = 23
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [3] .gnu.hash: sh_addr = 2e8, sh_size = 38, sh_offset = 2e8, sh_name = 36
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [4] .dynsym: sh_addr = 320, sh_size = c0, sh_offset = 320, sh_name = 40
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [5] .dynstr: sh_addr = 3e0, sh_size = 78, sh_offset = 3e0, sh_name = 48
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [6] .gnu.version: sh_addr = 458, sh_size = 10, sh_offset = 458, sh_name = 50
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [7] .gnu.version_d: sh_addr = 468, sh_size = 38, sh_offset = 468, sh_name = 5d
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [8] .rela.dyn: sh_addr = 4a0, sh_size = 2a228, sh_offset = 4a0, sh_name = 6c
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [9] .plt: sh_addr = 2b000, sh_size = 10, sh_offset = 2b000, sh_name = 76
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [10] .plt.got: sh_addr = 2b010, sh_size = 10, sh_offset = 2b010, sh_name = 7b
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [11] .text: sh_addr = 2c000, sh_size = 3cd1c5, sh_offset = 2c000, sh_name = 84
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [12] .nipx: sh_addr = 3f91c5, sh_size = cb0, sh_offset = 3f91c5, sh_name = 8a
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [13] .rodata: sh_addr = 3fa000, sh_size = 86b3, sh_offset = 3fa000, sh_name = 90
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [14] .svm_heap: sh_addr = 403000, sh_size = 4f4dc0, sh_offset = 403000, sh_name = 98
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [15] .niprod: sh_addr = 8f7dc0, sh_size = 8c0, sh_offset = 8f7dc0, sh_name = a2
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [16] .eh_frame_hdr: sh_addr = 8f8680, sh_size = 18bc, sh_offset = 8f8680, sh_name = aa
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [17] .eh_frame: sh_addr = 8f9f40, sh_size = 6ed8, sh_offset = 8f9f40, sh_name = b8
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [18] .gcc_except_table: sh_addr = 900e18, sh_size = 89, sh_offset = 900e18, sh_name = c2
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [19] .init_array: sh_addr = 9027f0, sh_size = 10, sh_offset = 9017f0, sh_name = d4
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [20] .fini_array: sh_addr = 902800, sh_size = 40, sh_offset = 901800, sh_name = e0
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [21] .data.rel.ro: sh_addr = 902840, sh_size = 5e0, sh_offset = 901840, sh_name = ec
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [22] .dynamic: sh_addr = 902e20, sh_size = 1a0, sh_offset = 901e20, sh_name = f9
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [23] .got: sh_addr = 902fc0, sh_size = 28, sh_offset = 901fc0, sh_name = 7f
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [24] .data: sh_addr = 903000, sh_size = 1c04, sh_offset = 902000, sh_name = 102
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [25] .nipd: sh_addr = 904c04, sh_size = 8, sh_offset = 903c04, sh_name = 108
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [26] .bss: sh_addr = 904c20, sh_size = 102c0, sh_offset = 903c0c, sh_name = 10e
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [27] .comment: sh_addr = 0, sh_size = 623, sh_offset = 903c0c, sh_name = 113
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [28] .note.sgxmeta: sh_addr = 0, sh_size = 501c, sh_offset = 904230, sh_name = 11c
+LOAD Section: 1
+Flags = 0x0000000000000004
+VAddr = 0x0000000000000000
+Size  = 0x000000000002A6C8
+
+LOAD Section: 2
+Flags = 0x0000000000000005
+VAddr = 0x000000000002B000
+Size  = 0x00000000003CEE75
+
+LOAD Section: 3
+Flags = 0x0000000000000004
+VAddr = 0x00000000003FA000
+Size  = 0x0000000000506EA1
+
+LOAD Section: 4
+Flags = 0x0000000000000006
+VAddr = 0x00000000009027F0
+Size  = 0x00000000000126F0
+
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [0] : sh_addr = 0, sh_size = 0, sh_offset = 0, sh_name = 0
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [1] .interp: sh_addr = 2a8, sh_size = 1c, sh_offset = 2a8, sh_name = 1b
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [2] .note.gnu.build-id: sh_addr = 2c4, sh_size = 24, sh_offset = 2c4, sh_name = 23
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [3] .gnu.hash: sh_addr = 2e8, sh_size = 38, sh_offset = 2e8, sh_name = 36
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [4] .dynsym: sh_addr = 320, sh_size = c0, sh_offset = 320, sh_name = 40
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [5] .dynstr: sh_addr = 3e0, sh_size = 78, sh_offset = 3e0, sh_name = 48
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [6] .gnu.version: sh_addr = 458, sh_size = 10, sh_offset = 458, sh_name = 50
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [7] .gnu.version_d: sh_addr = 468, sh_size = 38, sh_offset = 468, sh_name = 5d
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [8] .rela.dyn: sh_addr = 4a0, sh_size = 2a228, sh_offset = 4a0, sh_name = 6c
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [9] .plt: sh_addr = 2b000, sh_size = 10, sh_offset = 2b000, sh_name = 76
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [10] .plt.got: sh_addr = 2b010, sh_size = 10, sh_offset = 2b010, sh_name = 7b
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [11] .text: sh_addr = 2c000, sh_size = 3cd1c5, sh_offset = 2c000, sh_name = 84
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [12] .nipx: sh_addr = 3f91c5, sh_size = cb0, sh_offset = 3f91c5, sh_name = 8a
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [13] .rodata: sh_addr = 3fa000, sh_size = 86b3, sh_offset = 3fa000, sh_name = 90
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [14] .svm_heap: sh_addr = 403000, sh_size = 4f4dc0, sh_offset = 403000, sh_name = 98
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [15] .niprod: sh_addr = 8f7dc0, sh_size = 8c0, sh_offset = 8f7dc0, sh_name = a2
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [16] .eh_frame_hdr: sh_addr = 8f8680, sh_size = 18bc, sh_offset = 8f8680, sh_name = aa
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [17] .eh_frame: sh_addr = 8f9f40, sh_size = 6ed8, sh_offset = 8f9f40, sh_name = b8
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [18] .gcc_except_table: sh_addr = 900e18, sh_size = 89, sh_offset = 900e18, sh_name = c2
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [19] .init_array: sh_addr = 9027f0, sh_size = 10, sh_offset = 9017f0, sh_name = d4
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [20] .fini_array: sh_addr = 902800, sh_size = 40, sh_offset = 901800, sh_name = e0
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [21] .data.rel.ro: sh_addr = 902840, sh_size = 5e0, sh_offset = 901840, sh_name = ec
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [22] .dynamic: sh_addr = 902e20, sh_size = 1a0, sh_offset = 901e20, sh_name = f9
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [23] .got: sh_addr = 902fc0, sh_size = 28, sh_offset = 901fc0, sh_name = 7f
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [24] .data: sh_addr = 903000, sh_size = 1c04, sh_offset = 902000, sh_name = 102
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [25] .nipd: sh_addr = 904c04, sh_size = 8, sh_offset = 903c04, sh_name = 108
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [26] .bss: sh_addr = 904c20, sh_size = 102c0, sh_offset = 903c0c, sh_name = 10e
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [27] .comment: sh_addr = 0, sh_size = 623, sh_offset = 903c0c, sh_name = 113
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [28] .note.sgxmeta: sh_addr = 0, sh_size = 501c, sh_offset = 904230, sh_name = 11c
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [29] .debug_aranges: sh_addr = 0, sh_size = 58c0, sh_offset = 909250, sh_name = 12a
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [30] .debug_pubnames: sh_addr = 0, sh_size = 2ca7, sh_offset = 90eb10, sh_name = 139
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [31] .debug_info: sh_addr = 0, sh_size = bdf79, sh_offset = 9117b7, sh_name = 149
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [32] .debug_abbrev: sh_addr = 0, sh_size = 10ecf, sh_offset = 9cf730, sh_name = 155
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [33] .debug_line: sh_addr = 0, sh_size = 1db76, sh_offset = 9e05ff, sh_name = 163
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [34] .debug_frame: sh_addr = 0, sh_size = 3a18, sh_offset = 9fe178, sh_name = 16f
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [35] .debug_str: sh_addr = 0, sh_size = 119b1, sh_offset = a01b90, sh_name = 17c
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [36] .debug_loc: sh_addr = 0, sh_size = 26957, sh_offset = a13541, sh_name = 187
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [37] .debug_ranges: sh_addr = 0, sh_size = b1e0, sh_offset = a39e98, sh_name = 192
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [38] .symtab: sh_addr = 0, sh_size = 2ba10, sh_offset = a45078, sh_name = 1
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [39] .strtab: sh_addr = 0, sh_size = 80abc, sh_offset = a70a88, sh_name = 9
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [40] .shstrtab: sh_addr = 0, sh_size = 1a0, sh_offset = af1544, sh_name = 11
+[enclave_create sgx_enclave_common.cpp:357] 
+ secs->attibutes.flags = 6, secs->attributes.xfrm = 7 
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [0] : sh_addr = 0, sh_size = 0, sh_offset = 0, sh_name = 0
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [1] .interp: sh_addr = 2a8, sh_size = 1c, sh_offset = 2a8, sh_name = 1b
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [2] .note.gnu.build-id: sh_addr = 2c4, sh_size = 24, sh_offset = 2c4, sh_name = 23
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [3] .gnu.hash: sh_addr = 2e8, sh_size = 38, sh_offset = 2e8, sh_name = 36
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [4] .dynsym: sh_addr = 320, sh_size = c0, sh_offset = 320, sh_name = 40
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [5] .dynstr: sh_addr = 3e0, sh_size = 78, sh_offset = 3e0, sh_name = 48
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [6] .gnu.version: sh_addr = 458, sh_size = 10, sh_offset = 458, sh_name = 50
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [7] .gnu.version_d: sh_addr = 468, sh_size = 38, sh_offset = 468, sh_name = 5d
+[get_section /home/ubuntu/graal-root/linux-sgx/psw/urts/parser/elfparser.cpp:83] section [8] .rela.dyn: sh_addr = 4a0, sh_size = 2a228, sh_offset = 4a0, sh_name = 6c
+[build_image /home/ubuntu/graal-root/linux-sgx/psw/urts/loader.cpp:560] 
+	Metadata Version = 0x0000000100000004
+build_contexts, step = 0x0000000000000000
+	build_context
+	Entry Id     =    1, HEAP_MIN        , Page Count =     1, Attributes = 0x01, Flags = 0x0000000000000203, RVA = 0x0000000000915000 -> RVA = 0x0000000000915000
+build_contexts, step = 0x0000000000000000
+	build_context
+	Entry Id     =    2, HEAP_INIT       , Page Count = 524287, Attributes = 0x11, Flags = 0x0000000000000203, RVA = 0x0000000000916000 -> RVA = 0x0000000000916000
+build_contexts, step = 0x0000000000000000
+	build_context
+	Entry Id     =   10, GUARD           , Page Count =    16, Attributes = 0x00, Flags = 0x0000000000000000, RVA = 0x0000000080915000 -> RVA = 0x0000000080915000
+build_contexts, step = 0x0000000000000000
+	build_context
+	Entry Id     =    8, STACK_MIN       , Page Count =  4096, Attributes = 0x03, Flags = 0x0000000000000203, RVA = 0x0000000080925000 -> RVA = 0x0000000080925000
+build_contexts, step = 0x0000000000000000
+	build_context
+	Entry Id     =   10, GUARD           , Page Count =    16, Attributes = 0x00, Flags = 0x0000000000000000, RVA = 0x0000000081925000 -> RVA = 0x0000000081925000
+build_contexts, step = 0x0000000000000000
+	build_context
+	Entry Id     =    4, TCS             , Page Count =     1, Attributes = 0x03, Flags = 0x0000000000000100, RVA = 0x0000000081935000 -> RVA = 0x0000000081935000
+build_contexts, step = 0x0000000000000000
+	build_context
+	Entry Id     =    6, SSA             , Page Count =     2, Attributes = 0x03, Flags = 0x0000000000000203, RVA = 0x0000000081936000 -> RVA = 0x0000000081936000
+build_contexts, step = 0x0000000000000000
+	build_context
+	Entry Id     =   10, GUARD           , Page Count =    16, Attributes = 0x00, Flags = 0x0000000000000000, RVA = 0x0000000081938000 -> RVA = 0x0000000081938000
+build_contexts, step = 0x0000000000000000
+	build_context
+	Entry Id     =    5, TD              , Page Count =     1, Attributes = 0x03, Flags = 0x0000000000000203, RVA = 0x0000000081948000 -> RVA = 0x0000000081948000
+build_contexts, step = 0x0000000000000000
+	Entry Id( 0) = 4105, THREAD_GROUP    , Entry Count =    7, Load Times = 9,    LStep = 0x0000000001034000
+build_contexts, step = 0x0000000001034000
+	build_context
+	Entry Id     =   10, GUARD           , Page Count =    16, Attributes = 0x00, Flags = 0x0000000000000000, RVA = 0x0000000080915000 -> RVA = 0x0000000081949000
+build_contexts, step = 0x0000000001034000
+	build_context
+	Entry Id     =    8, STACK_MIN       , Page Count =  4096, Attributes = 0x03, Flags = 0x0000000000000203, RVA = 0x0000000080925000 -> RVA = 0x0000000081959000
+build_contexts, step = 0x0000000001034000
+	build_context
+	Entry Id     =   10, GUARD           , Page Count =    16, Attributes = 0x00, Flags = 0x0000000000000000, RVA = 0x0000000081925000 -> RVA = 0x0000000082959000
+build_contexts, step = 0x0000000001034000
+	build_context
+	Entry Id     =    4, TCS             , Page Count =     1, Attributes = 0x03, Flags = 0x0000000000000100, RVA = 0x0000000081935000 -> RVA = 0x0000000082969000
+build_contexts, step = 0x0000000001034000
+	build_context
+	Entry Id     =    6, SSA             , Page Count =     2, Attributes = 0x03, Flags = 0x0000000000000203, RVA = 0x0000000081936000 -> RVA = 0x000000008296A000
+build_contexts, step = 0x0000000001034000
+	build_context
+	Entry Id     =   10, GUARD           , Page Count =    16, Attributes = 0x00, Flags = 0x0000000000000000, RVA = 0x0000000081938000 -> RVA = 0x000000008296C000
+build_contexts, step = 0x0000000001034000
+	build_context
+	Entry Id     =    5, TD              , Page Count =     1, Attributes = 0x03, Flags = 0x0000000000000203, RVA = 0x0000000081948000 -> RVA = 0x000000008297C000
+build_contexts, step = 0x0000000002068000
+	build_context
+	Entry Id     =   10, GUARD           , Page Count =    16, Attributes = 0x00, Flags = 0x0000000000000000, RVA = 0x0000000080915000 -> RVA = 0x000000008297D000
+build_contexts, step = 0x0000000002068000
+	build_context
+	Entry Id     =    8, STACK_MIN       , Page Count =  4096, Attributes = 0x03, Flags = 0x0000000000000203, RVA = 0x0000000080925000 -> RVA = 0x000000008298D000
+build_contexts, step = 0x0000000002068000
+	build_context
+	Entry Id     =   10, GUARD           , Page Count =    16, Attributes = 0x00, Flags = 0x0000000000000000, RVA = 0x0000000081925000 -> RVA = 0x000000008398D000
+build_contexts, step = 0x0000000002068000
+	build_context
+	Entry Id     =    4, TCS             , Page Count =     1, Attributes = 0x03, Flags = 0x0000000000000100, RVA = 0x0000000081935000 -> RVA = 0x000000008399D000
+build_contexts, step = 0x0000000002068000
+	build_context
+	Entry Id     =    6, SSA             , Page Count =     2, Attributes = 0x03, Flags = 0x0000000000000203, RVA = 0x0000000081936000 -> RVA = 0x000000008399E000
+build_contexts, step = 0x0000000002068000
+	build_context
+	Entry Id     =   10, GUARD           , Page Count =    16, Attributes = 0x00, Flags = 0x0000000000000000, RVA = 0x0000000081938000 -> RVA = 0x00000000839A0000
+build_contexts, step = 0x0000000002068000
+	build_context
+	Entry Id     =    5, TD              , Page Count =     1, Attributes = 0x03, Flags = 0x0000000000000203, RVA = 0x0000000081948000 -> RVA = 0x00000000839B0000
+build_contexts, step = 0x000000000309C000
+	build_context
+	Entry Id     =   10, GUARD           , Page Count =    16, Attributes = 0x00, Flags = 0x0000000000000000, RVA = 0x0000000080915000 -> RVA = 0x00000000839B1000
+build_contexts, step = 0x000000000309C000
+	build_context
+	Entry Id     =    8, STACK_MIN       , Page Count =  4096, Attributes = 0x03, Flags = 0x0000000000000203, RVA = 0x0000000080925000 -> RVA = 0x00000000839C1000
+build_contexts, step = 0x000000000309C000
+	build_context
+	Entry Id     =   10, GUARD           , Page Count =    16, Attributes = 0x00, Flags = 0x0000000000000000, RVA = 0x0000000081925000 -> RVA = 0x00000000849C1000
+build_contexts, step = 0x000000000309C000
+	build_context
+	Entry Id     =    4, TCS             , Page Count =     1, Attributes = 0x03, Flags = 0x0000000000000100, RVA = 0x0000000081935000 -> RVA = 0x00000000849D1000
+build_contexts, step = 0x000000000309C000
+	build_context
+	Entry Id     =    6, SSA             , Page Count =     2, Attributes = 0x03, Flags = 0x0000000000000203, RVA = 0x0000000081936000 -> RVA = 0x00000000849D2000
+build_contexts, step = 0x000000000309C000
+	build_context
+	Entry Id     =   10, GUARD           , Page Count =    16, Attributes = 0x00, Flags = 0x0000000000000000, RVA = 0x0000000081938000 -> RVA = 0x00000000849D4000
+build_contexts, step = 0x000000000309C000
+	build_context
+	Entry Id     =    5, TD              , Page Count =     1, Attributes = 0x03, Flags = 0x0000000000000203, RVA = 0x0000000081948000 -> RVA = 0x00000000849E4000
+build_contexts, step = 0x00000000040D0000
+	build_context
+	Entry Id     =   10, GUARD           , Page Count =    16, Attributes = 0x00, Flags = 0x0000000000000000, RVA = 0x0000000080915000 -> RVA = 0x00000000849E5000
+build_contexts, step = 0x00000000040D0000
+	build_context
+	Entry Id     =    8, STACK_MIN       , Page Count =  4096, Attributes = 0x03, Flags = 0x0000000000000203, RVA = 0x0000000080925000 -> RVA = 0x00000000849F5000
+build_contexts, step = 0x00000000040D0000
+	build_context
+	Entry Id     =   10, GUARD           , Page Count =    16, Attributes = 0x00, Flags = 0x0000000000000000, RVA = 0x0000000081925000 -> RVA = 0x00000000859F5000
+build_contexts, step = 0x00000000040D0000
+	build_context
+	Entry Id     =    4, TCS             , Page Count =     1, Attributes = 0x03, Flags = 0x0000000000000100, RVA = 0x0000000081935000 -> RVA = 0x0000000085A05000
+build_contexts, step = 0x00000000040D0000
+	build_context
+	Entry Id     =    6, SSA             , Page Count =     2, Attributes = 0x03, Flags = 0x0000000000000203, RVA = 0x0000000081936000 -> RVA = 0x0000000085A06000
+build_contexts, step = 0x00000000040D0000
+	build_context
+	Entry Id     =   10, GUARD           , Page Count =    16, Attributes = 0x00, Flags = 0x0000000000000000, RVA = 0x0000000081938000 -> RVA = 0x0000000085A08000
+build_contexts, step = 0x00000000040D0000
+	build_context
+	Entry Id     =    5, TD              , Page Count =     1, Attributes = 0x03, Flags = 0x0000000000000203, RVA = 0x0000000081948000 -> RVA = 0x0000000085A18000
+build_contexts, step = 0x0000000005104000
+	build_context
+	Entry Id     =   10, GUARD           , Page Count =    16, Attributes = 0x00, Flags = 0x0000000000000000, RVA = 0x0000000080915000 -> RVA = 0x0000000085A19000
+build_contexts, step = 0x0000000005104000
+	build_context
+	Entry Id     =    8, STACK_MIN       , Page Count =  4096, Attributes = 0x03, Flags = 0x0000000000000203, RVA = 0x0000000080925000 -> RVA = 0x0000000085A29000
+build_contexts, step = 0x0000000005104000
+	build_context
+	Entry Id     =   10, GUARD           , Page Count =    16, Attributes = 0x00, Flags = 0x0000000000000000, RVA = 0x0000000081925000 -> RVA = 0x0000000086A29000
+build_contexts, step = 0x0000000005104000
+	build_context
+	Entry Id     =    4, TCS             , Page Count =     1, Attributes = 0x03, Flags = 0x0000000000000100, RVA = 0x0000000081935000 -> RVA = 0x0000000086A39000
+build_contexts, step = 0x0000000005104000
+	build_context
+	Entry Id     =    6, SSA             , Page Count =     2, Attributes = 0x03, Flags = 0x0000000000000203, RVA = 0x0000000081936000 -> RVA = 0x0000000086A3A000
+build_contexts, step = 0x0000000005104000
+	build_context
+	Entry Id     =   10, GUARD           , Page Count =    16, Attributes = 0x00, Flags = 0x0000000000000000, RVA = 0x0000000081938000 -> RVA = 0x0000000086A3C000
+build_contexts, step = 0x0000000005104000
+	build_context
+	Entry Id     =    5, TD              , Page Count =     1, Attributes = 0x03, Flags = 0x0000000000000203, RVA = 0x0000000081948000 -> RVA = 0x0000000086A4C000
+build_contexts, step = 0x0000000006138000
+	build_context
+	Entry Id     =   10, GUARD           , Page Count =    16, Attributes = 0x00, Flags = 0x0000000000000000, RVA = 0x0000000080915000 -> RVA = 0x0000000086A4D000
+build_contexts, step = 0x0000000006138000
+	build_context
+	Entry Id     =    8, STACK_MIN       , Page Count =  4096, Attributes = 0x03, Flags = 0x0000000000000203, RVA = 0x0000000080925000 -> RVA = 0x0000000086A5D000
+build_contexts, step = 0x0000000006138000
+	build_context
+	Entry Id     =   10, GUARD           , Page Count =    16, Attributes = 0x00, Flags = 0x0000000000000000, RVA = 0x0000000081925000 -> RVA = 0x0000000087A5D000
+build_contexts, step = 0x0000000006138000
+	build_context
+	Entry Id     =    4, TCS             , Page Count =     1, Attributes = 0x03, Flags = 0x0000000000000100, RVA = 0x0000000081935000 -> RVA = 0x0000000087A6D000
+build_contexts, step = 0x0000000006138000
+	build_context
+	Entry Id     =    6, SSA             , Page Count =     2, Attributes = 0x03, Flags = 0x0000000000000203, RVA = 0x0000000081936000 -> RVA = 0x0000000087A6E000
+build_contexts, step = 0x0000000006138000
+	build_context
+	Entry Id     =   10, GUARD           , Page Count =    16, Attributes = 0x00, Flags = 0x0000000000000000, RVA = 0x0000000081938000 -> RVA = 0x0000000087A70000
+build_contexts, step = 0x0000000006138000
+	build_context
+	Entry Id     =    5, TD              , Page Count =     1, Attributes = 0x03, Flags = 0x0000000000000203, RVA = 0x0000000081948000 -> RVA = 0x0000000087A80000
+build_contexts, step = 0x000000000716C000
+	build_context
+	Entry Id     =   10, GUARD           , Page Count =    16, Attributes = 0x00, Flags = 0x0000000000000000, RVA = 0x0000000080915000 -> RVA = 0x0000000087A81000
+build_contexts, step = 0x000000000716C000
+	build_context
+	Entry Id     =    8, STACK_MIN       , Page Count =  4096, Attributes = 0x03, Flags = 0x0000000000000203, RVA = 0x0000000080925000 -> RVA = 0x0000000087A91000
+build_contexts, step = 0x000000000716C000
+	build_context
+	Entry Id     =   10, GUARD           , Page Count =    16, Attributes = 0x00, Flags = 0x0000000000000000, RVA = 0x0000000081925000 -> RVA = 0x0000000088A91000
+build_contexts, step = 0x000000000716C000
+	build_context
+	Entry Id     =    4, TCS             , Page Count =     1, Attributes = 0x03, Flags = 0x0000000000000100, RVA = 0x0000000081935000 -> RVA = 0x0000000088AA1000
+build_contexts, step = 0x000000000716C000
+	build_context
+	Entry Id     =    6, SSA             , Page Count =     2, Attributes = 0x03, Flags = 0x0000000000000203, RVA = 0x0000000081936000 -> RVA = 0x0000000088AA2000
+build_contexts, step = 0x000000000716C000
+	build_context
+	Entry Id     =   10, GUARD           , Page Count =    16, Attributes = 0x00, Flags = 0x0000000000000000, RVA = 0x0000000081938000 -> RVA = 0x0000000088AA4000
+build_contexts, step = 0x000000000716C000
+	build_context
+	Entry Id     =    5, TD              , Page Count =     1, Attributes = 0x03, Flags = 0x0000000000000203, RVA = 0x0000000081948000 -> RVA = 0x0000000088AB4000
+build_contexts, step = 0x00000000081A0000
+	build_context
+	Entry Id     =   10, GUARD           , Page Count =    16, Attributes = 0x00, Flags = 0x0000000000000000, RVA = 0x0000000080915000 -> RVA = 0x0000000088AB5000
+build_contexts, step = 0x00000000081A0000
+	build_context
+	Entry Id     =    8, STACK_MIN       , Page Count =  4096, Attributes = 0x03, Flags = 0x0000000000000203, RVA = 0x0000000080925000 -> RVA = 0x0000000088AC5000
+build_contexts, step = 0x00000000081A0000
+	build_context
+	Entry Id     =   10, GUARD           , Page Count =    16, Attributes = 0x00, Flags = 0x0000000000000000, RVA = 0x0000000081925000 -> RVA = 0x0000000089AC5000
+build_contexts, step = 0x00000000081A0000
+	build_context
+	Entry Id     =    4, TCS             , Page Count =     1, Attributes = 0x03, Flags = 0x0000000000000100, RVA = 0x0000000081935000 -> RVA = 0x0000000089AD5000
+build_contexts, step = 0x00000000081A0000
+	build_context
+	Entry Id     =    6, SSA             , Page Count =     2, Attributes = 0x03, Flags = 0x0000000000000203, RVA = 0x0000000081936000 -> RVA = 0x0000000089AD6000
+build_contexts, step = 0x00000000081A0000
+	build_context
+	Entry Id     =   10, GUARD           , Page Count =    16, Attributes = 0x00, Flags = 0x0000000000000000, RVA = 0x0000000081938000 -> RVA = 0x0000000089AD8000
+build_contexts, step = 0x00000000081A0000
+	build_context
+	Entry Id     =    5, TD              , Page Count =     1, Attributes = 0x03, Flags = 0x0000000000000203, RVA = 0x0000000081948000 -> RVA = 0x0000000089AE8000
+build_contexts, step = 0x00000000091D4000
+	build_context
+	Entry Id     =   10, GUARD           , Page Count =    16, Attributes = 0x00, Flags = 0x0000000000000000, RVA = 0x0000000080915000 -> RVA = 0x0000000089AE9000
+build_contexts, step = 0x00000000091D4000
+	build_context
+	Entry Id     =    8, STACK_MIN       , Page Count =  4096, Attributes = 0x03, Flags = 0x0000000000000203, RVA = 0x0000000080925000 -> RVA = 0x0000000089AF9000
+build_contexts, step = 0x00000000091D4000
+	build_context
+	Entry Id     =   10, GUARD           , Page Count =    16, Attributes = 0x00, Flags = 0x0000000000000000, RVA = 0x0000000081925000 -> RVA = 0x000000008AAF9000
+build_contexts, step = 0x00000000091D4000
+	build_context
+	Entry Id     =    4, TCS             , Page Count =     1, Attributes = 0x03, Flags = 0x0000000000000100, RVA = 0x0000000081935000 -> RVA = 0x000000008AB09000
+build_contexts, step = 0x00000000091D4000
+	build_context
+	Entry Id     =    6, SSA             , Page Count =     2, Attributes = 0x03, Flags = 0x0000000000000203, RVA = 0x0000000081936000 -> RVA = 0x000000008AB0A000
+build_contexts, step = 0x00000000091D4000
+	build_context
+	Entry Id     =   10, GUARD           , Page Count =    16, Attributes = 0x00, Flags = 0x0000000000000000, RVA = 0x0000000081938000 -> RVA = 0x000000008AB0C000
+build_contexts, step = 0x00000000091D4000
+	build_context
+	Entry Id     =    5, TD              , Page Count =     1, Attributes = 0x03, Flags = 0x0000000000000203, RVA = 0x0000000081948000 -> RVA = 0x000000008AB1C000
+build_contexts, step = 0x0000000000000000
+	build_context
+	Entry Id     =   20, RSRV_MIN        , Page Count =     0, Attributes = 0x01, Flags = 0x0000000000000207, RVA = 0x0000000093CF1000 -> RVA = 0x0000000093CF1000
+build_contexts, step = 0x0000000000000000
+	build_context
+	Entry Id     =   21, RSRV_INIT       , Page Count = 524288, Attributes = 0x11, Flags = 0x0000000000000207, RVA = 0x0000000093CF1000 -> RVA = 0x0000000093CF1000
+[reg_sig_handler sig_handler.cpp:189] signal handler is registered
+[__create_enclave /home/ubuntu/graal-root/linux-sgx/psw/urts/urts_com.h:332] add tcs 0x7f8481935000
+[__create_enclave /home/ubuntu/graal-root/linux-sgx/psw/urts/urts_com.h:332] add tcs 0x7f8482969000
+[__create_enclave /home/ubuntu/graal-root/linux-sgx/psw/urts/urts_com.h:332] add tcs 0x7f848399d000
+[__create_enclave /home/ubuntu/graal-root/linux-sgx/psw/urts/urts_com.h:332] add tcs 0x7f84849d1000
+[__create_enclave /home/ubuntu/graal-root/linux-sgx/psw/urts/urts_com.h:332] add tcs 0x7f8485a05000
+[__create_enclave /home/ubuntu/graal-root/linux-sgx/psw/urts/urts_com.h:332] add tcs 0x7f8486a39000
+[__create_enclave /home/ubuntu/graal-root/linux-sgx/psw/urts/urts_com.h:332] add tcs 0x7f8487a6d000
+[__create_enclave /home/ubuntu/graal-root/linux-sgx/psw/urts/urts_com.h:332] add tcs 0x7f8488aa1000
+[__create_enclave /home/ubuntu/graal-root/linux-sgx/psw/urts/urts_com.h:332] add tcs 0x7f8489ad5000
+[__create_enclave /home/ubuntu/graal-root/linux-sgx/psw/urts/urts_com.h:332] add tcs 0x7f848ab09000
+[__create_enclave /home/ubuntu/graal-root/linux-sgx/psw/urts/urts_com.h:342] Debug enclave. Checking if VTune is profiling or SGX_DBG_OPTIN is set
+[__create_enclave /home/ubuntu/graal-root/linux-sgx/psw/urts/urts_com.h:388] VTune is not profiling and SGX_DBG_OPTIN is not set. TCS Debug OPTIN bit not set and API to do module mapping not invoked
+Fatal error: Unexpected exception in MonitorSupport.monitorEnter: java.lang.NullPointerException: null
+    at java.util.concurrent.locks.ReentrantLock.lock(ReentrantLock.java:285)
+    at com.oracle.svm.core.monitor.MultiThreadedMonitorSupport.monitorEnter(MultiThreadedMonitorSupport.java:232)
+    at com.oracle.svm.core.monitor.MultiThreadedMonitorSupport.slowPathMonitorEnter(MultiThreadedMonitorSupport.java:198)
+    at sun.misc.ObjectInputFilter$Config.getSerialFilter(ObjectInputFilter.java:308)
+    at java.io.ObjectInputStream.<init>(ObjectInputStream.java:394)
+    at org.graalvm.nativeimage.SGXSerializer.deserialize(SGXSerializer.java:85)
+    at sim.Secure0.relay_doSomething_Secure0(Secure0.java:-1)
+
+JavaFrameAnchor dump:
+
+  No anchors
+  
+TopFrame info:
+
+  TotalFrameSize in CodeInfoTable 48
+  
+VMThreads info:
+
+  VMThread 00007f8400945940  STATUS_IN_JAVA (safepoints disabled)  java.lang.Thread@0x7f849446adb0
+  
+VM Thread State for current thread 00007f8400945940:
+
+  0 (8 bytes): com.oracle.svm.jni.JNIThreadLocalEnvironment.jniFunctions = (bytes) 
+    00007f8400945940: 00007f849437e010
+  
+  8 (8 bytes): com.oracle.svm.core.graal.snippets.StackOverflowCheckImpl.stackBoundaryTL = (Word) 1  0000000000000001
+  16 (4 bytes): com.oracle.svm.core.thread.Safepoint.safepointRequested = (int) 2125424001  7eaf6581
+  20 (4 bytes): com.oracle.svm.core.thread.VMThreads$StatusSupport.statusTL = (int) 1  00000001
+  24 (32 bytes): com.oracle.svm.core.genscavenge.ThreadLocalAllocation.regularTLAB = (bytes) 
+    00007f8400945958: 00007f8494800000 00007f8494900000
+    00007f8400945968: 00007f8494805098 0000000000000000
+    
+  
+  56 (8 bytes): com.oracle.svm.core.thread.JavaThreads.currentThread = (Object) java.lang.Thread  00007f849446adb0
+  64 (8 bytes): com.oracle.svm.core.stack.JavaFrameAnchors.lastAnchor = (Word) 0  0000000000000000
+  72 (8 bytes): com.oracle.svm.core.heap.NoAllocationVerifier.openVerifiers = (Object) null
+  80 (8 bytes): com.oracle.svm.core.identityhashcode.IdentityHashCodeSupport.hashCodeGeneratorTL = (Object) null
+  88 (8 bytes): com.oracle.svm.core.snippets.ExceptionUnwind.currentException = (Object) null
+  96 (8 bytes): com.oracle.svm.core.thread.ThreadingSupportImpl.activeTimer = (Object) null
+  104 (8 bytes): com.oracle.svm.graal.isolated.IsolatedCompileClient.currentClient = (Object) null
+  112 (8 bytes): com.oracle.svm.graal.isolated.IsolatedCompileContext.currentContext = (Object) null
+  120 (8 bytes): com.oracle.svm.jni.JNIObjectHandles.handles = (Object) com.oracle.svm.core.handles.ThreadLocalHandles  00007f84b4901110
+  128 (8 bytes): com.oracle.svm.jni.JNIThreadLocalPendingException.pendingException = (Object) null
+  136 (8 bytes): com.oracle.svm.jni.JNIThreadLocalPinnedObjects.pinnedObjectsListHead = (Object) null
+  144 (8 bytes): com.oracle.svm.jni.JNIThreadOwnedMonitors.ownedMonitors = (Object) null
+  152 (8 bytes): com.oracle.svm.core.thread.VMThreads.IsolateTL = (Word) 140207397490688  00007f84941f5000
+  160 (8 bytes): com.oracle.svm.core.thread.VMThreads.OSThreadHandleTL = (Word) 140220747097920  00007f87afd22740
+  168 (8 bytes): com.oracle.svm.core.thread.VMThreads.OSThreadIdTL = (Word) 140220747097920  00007f87afd22740
+  176 (8 bytes): com.oracle.svm.core.thread.VMThreads.nextTL = (Word) 0  0000000000000000
+  184 (8 bytes): com.oracle.svm.core.thread.VMThreads.unalignedIsolateThreadMemoryTL = (Word) 140204922132752  00007f8400945910
+  192 (4 bytes): com.oracle.svm.core.graal.snippets.StackOverflowCheckImpl.yellowZoneStateTL = (int) -16843010  fefefefe
+  196 (4 bytes): com.oracle.svm.core.snippets.ImplicitExceptions.implicitExceptionsAreFatal = (int) 0  00000000
+  200 (4 bytes): com.oracle.svm.core.thread.ThreadingSupportImpl.currentPauseDepth = (int) 1  00000001
+  204 (4 bytes): com.oracle.svm.core.thread.VMThreads$ActionOnTransitionToJavaSupport.actionTL = (int) 0  00000000
+  208 (4 bytes): com.oracle.svm.core.thread.VMThreads$StatusSupport.safepointsDisabledTL = (int) 1  00000001
+  
+VMOperation dump:
+
+  No VMOperation in progress
+  
+Dump Counters:
+
+  
+Raw Stacktrace:
+
+  00007f848aaf82d0: 000000000060f530 0000000000000010
+  00007f848aaf82e0: 00007f849431e580 00007f84948045b0
+  00007f848aaf82f0: 00007f8400078f25 00007f840009a1da
+  00007f848aaf8300: 000000018aaf8330 00007f8400078f25
+  00007f848aaf8310: 00007f8400945c20 00007f84945109f8
+  00007f848aaf8320: 00007f8494510c50 00007f8400155d93
+  00007f848aaf8330: 00007f848aaf8430 00007f84003d0fc3
+  00007f848aaf8340: 00007f848aaf8380 00007f8494510c50
+  
+Stacktrace Stage 0:
+
+  SP 00007f848aaf82d0 IP 00007f84000749a0  FrameSize 48
+  SP 00007f848aaf8300 IP 00007f840009a1da  FrameSize 16
+  SP 00007f848aaf8310 IP 00007f8400078f25  FrameSize 32
+  SP 00007f848aaf8330 IP 00007f8400155d93  FrameSize 48
+  SP 00007f848aaf8360 IP 00007f840032c9e9  FrameSize 48
+  SP 00007f848aaf8390 IP 00007f840032f3db  FrameSize 48
+  SP 00007f848aaf83c0 IP 00007f840004b367  FrameSize 128
+  
+Stacktrace Stage 1:
+
+  SP 00007f848aaf82d0 IP 00007f84000749a0  com.oracle.svm.core.code.CodeInfo@0x7f84944302a8 name = image code
+  SP 00007f848aaf8300 IP 00007f840009a1da  com.oracle.svm.core.code.CodeInfo@0x7f84944302a8 name = image code
+  SP 00007f848aaf8310 IP 00007f8400078f25  com.oracle.svm.core.code.CodeInfo@0x7f84944302a8 name = image code
+  SP 00007f848aaf8330 IP 00007f8400155d93  com.oracle.svm.core.code.CodeInfo@0x7f84944302a8 name = image code
+  SP 00007f848aaf8360 IP 00007f840032c9e9  com.oracle.svm.core.code.CodeInfo@0x7f84944302a8 name = image code
+  SP 00007f848aaf8390 IP 00007f840032f3db  com.oracle.svm.core.code.CodeInfo@0x7f84944302a8 name = image code
+  SP 00007f848aaf83c0 IP 00007f840004b367  com.oracle.svm.core.code.CodeInfo@0x7f84944302a8 name = image code
+  
+Stacktrace Stage 2:
+
+  SP 00007f848aaf82d0 IP 00007f84000749a0  [image code] com.oracle.svm.core.jdk.VMErrorSubstitutions.shutdown(VMErrorSubstitutions.java:111)
+  SP 00007f848aaf82d0 IP 00007f84000749a0  [image code] com.oracle.svm.core.jdk.VMErrorSubstitutions.shouldNotReachHere(VMErrorSubstitutions.java:104)
+  SP 00007f848aaf8300 IP 00007f840009a1da  [image code] com.oracle.svm.core.util.VMError.shouldNotReachHere(VMError.java:77)
+  SP 00007f848aaf8310 IP 00007f8400078f25  [image code] com.oracle.svm.core.monitor.MultiThreadedMonitorSupport.slowPathMonitorEnter(MultiThreadedMonitorSupport.java:219)
+  SP 00007f848aaf8330 IP 00007f8400155d93  [image code] sun.misc.ObjectInputFilter$Config.getSerialFilter(ObjectInputFilter.java:308)
+  SP 00007f848aaf8330 IP 00007f8400155d93  [image code] java.io.ObjectInputStream.<init>(ObjectInputStream.java:394)
+  SP 00007f848aaf8360 IP 00007f840032c9e9  [image code] org.graalvm.nativeimage.SGXSerializer.deserialize(SGXSerializer.java:85)
+  SP 00007f848aaf8390 IP 00007f840032f3db  [image code] sim.Secure0.relay_doSomething_Secure0(Secure0.java)
+  SP 00007f848aaf83c0 IP 00007f840004b367  [image code] com.oracle.svm.core.code.IsolateEnterStub.Secure0_relay_doSomething_Secure0_74a7dc520f76992420536907315c746a12b12439(IsolateEnterStub.java:0)
+  
+[Native image heap boundaries: 
+  ReadOnly Primitives: 0x7f84941f6028 .. 0x7f84942e95a8
+  ReadOnly References: 0x7f84942e95c0 .. 0x7f849437d5c0
+  ReadOnly Relocatables: 0x7f849437e000 .. 0x7f84943c7578
+  Writable Primitives: 0x7f84943c8000 .. 0x7f849443dff0
+  Writable References: 0x7f849443e000 .. 0x7f849451dfe8
+  Writable Huge: 0x0 .. 0x0
+  ReadOnly Huge: 0x7f84945f5030 .. 0x7f849466ea78]
+
+
+[Heap:
+  [Young generation: 
+    [Eden: 
+      [edenSpace:
+        aligned: 0/0 unaligned: 0/0]]
+    [Survivors: 
+      ]]
+  [Old generation: 
+    [oldFromSpace:
+      aligned: 1044440/1 unaligned: 0/0
+      aligned chunks:
+        0x7f84b4900000 (0x7f84b4901028-0x7f84b4901780)]
+    [oldToSpace:
+      aligned: 0/0 unaligned: 0/0]
+    ]
+  [Unused:
+    aligned: 267386880/255
+    aligned chunks:
+      0x7f8494b00000 (0x7f8494b01028-0x7f8494b01028)
+      0x7f8494d00000 (0x7f8494d01028-0x7f8494d01028)
+      0x7f8494f00000 (0x7f8494f01028-0x7f8494f01028)
+      0x7f8495100000 (0x7f8495101028-0x7f8495101028)
+      0x7f8495300000 (0x7f8495301028-0x7f8495301028)
+      0x7f8495500000 (0x7f8495501028-0x7f8495501028)
+      0x7f8495700000 (0x7f8495701028-0x7f8495701028)
+      0x7f8495900000 (0x7f8495901028-0x7f8495901028)
+      0x7f8495b00000 (0x7f8495b01028-0x7f8495b01028)
+      0x7f8495d00000 (0x7f8495d01028-0x7f8495d01028)
+      0x7f8495f00000 (0x7f8495f01028-0x7f8495f01028)
+      0x7f8496100000 (0x7f8496101028-0x7f8496101028)
+      0x7f8496300000 (0x7f8496301028-0x7f8496301028)
+      0x7f8496500000 (0x7f8496501028-0x7f8496501028)
+      0x7f8496700000 (0x7f8496701028-0x7f8496701028)
+      0x7f8496900000 (0x7f8496901028-0x7f8496901028)
+      0x7f8496b00000 (0x7f8496b01028-0x7f8496b01028)
+      0x7f8496d00000 (0x7f8496d01028-0x7f8496d01028)
+      0x7f8496f00000 (0x7f8496f01028-0x7f8496f01028)
+      0x7f8497100000 (0x7f8497101028-0x7f8497101028)
+      0x7f8497300000 (0x7f8497301028-0x7f8497301028)
+      0x7f8497500000 (0x7f8497501028-0x7f8497501028)
+      0x7f8497700000 (0x7f8497701028-0x7f8497701028)
+      0x7f8497900000 (0x7f8497901028-0x7f8497901028)
+      0x7f8497b00000 (0x7f8497b01028-0x7f8497b01028)
+      0x7f8497d00000 (0x7f8497d01028-0x7f8497d01028)
+      0x7f8497f00000 (0x7f8497f01028-0x7f8497f01028)
+      0x7f8498100000 (0x7f8498101028-0x7f8498101028)
+      0x7f8498300000 (0x7f8498301028-0x7f8498301028)
+      0x7f8498500000 (0x7f8498501028-0x7f8498501028)
+      0x7f8498700000 (0x7f8498701028-0x7f8498701028)
+      0x7f8498900000 (0x7f8498901028-0x7f8498901028)
+      0x7f8498b00000 (0x7f8498b01028-0x7f8498b01028)
+      0x7f8498d00000 (0x7f8498d01028-0x7f8498d01028)
+      0x7f8498f00000 (0x7f8498f01028-0x7f8498f01028)
+      0x7f8499100000 (0x7f8499101028-0x7f8499101028)
+      0x7f8499300000 (0x7f8499301028-0x7f8499301028)
+      0x7f8499500000 (0x7f8499501028-0x7f8499501028)
+      0x7f8499700000 (0x7f8499701028-0x7f8499701028)
+      0x7f8499900000 (0x7f8499901028-0x7f8499901028)
+      0x7f8499b00000 (0x7f8499b01028-0x7f8499b01028)
+      0x7f8499d00000 (0x7f8499d01028-0x7f8499d01028)
+      0x7f8499f00000 (0x7f8499f01028-0x7f8499f01028)
+      0x7f849a100000 (0x7f849a101028-0x7f849a101028)
+      0x7f849a300000 (0x7f849a301028-0x7f849a301028)
+      0x7f849a500000 (0x7f849a501028-0x7f849a501028)
+      0x7f849a700000 (0x7f849a701028-0x7f849a701028)
+      0x7f849a900000 (0x7f849a901028-0x7f849a901028)
+      0x7f849ab00000 (0x7f849ab01028-0x7f849ab01028)
+      0x7f849ad00000 (0x7f849ad01028-0x7f849ad01028)
+      0x7f849af00000 (0x7f849af01028-0x7f849af01028)
+      0x7f849b100000 (0x7f849b101028-0x7f849b101028)
+      0x7f849b300000 (0x7f849b301028-0x7f849b301028)
+      0x7f849b500000 (0x7f849b501028-0x7f849b501028)
+      0x7f849b700000 (0x7f849b701028-0x7f849b701028)
+      0x7f849b900000 (0x7f849b901028-0x7f849b901028)
+      0x7f849bb00000 (0x7f849bb01028-0x7f849bb01028)
+      0x7f849bd00000 (0x7f849bd01028-0x7f849bd01028)
+      0x7f849bf00000 (0x7f849bf01028-0x7f849bf01028)
+      0x7f849c100000 (0x7f849c101028-0x7f849c101028)
+      0x7f849c300000 (0x7f849c301028-0x7f849c301028)
+      0x7f849c500000 (0x7f849c501028-0x7f849c501028)
+      0x7f849c700000 (0x7f849c701028-0x7f849c701028)
+      0x7f849c900000 (0x7f849c901028-0x7f849c901028)
+      0x7f849cb00000 (0x7f849cb01028-0x7f849cb01028)
+      0x7f849cd00000 (0x7f849cd01028-0x7f849cd01028)
+      0x7f849cf00000 (0x7f849cf01028-0x7f849cf01028)
+      0x7f849d100000 (0x7f849d101028-0x7f849d101028)
+      0x7f849d300000 (0x7f849d301028-0x7f849d301028)
+      0x7f849d500000 (0x7f849d501028-0x7f849d501028)
+      0x7f849d700000 (0x7f849d701028-0x7f849d701028)
+      0x7f849d900000 (0x7f849d901028-0x7f849d901028)
+      0x7f849db00000 (0x7f849db01028-0x7f849db01028)
+      0x7f849dd00000 (0x7f849dd01028-0x7f849dd01028)
+      0x7f849df00000 (0x7f849df01028-0x7f849df01028)
+      0x7f849e100000 (0x7f849e101028-0x7f849e101028)
+      0x7f849e300000 (0x7f849e301028-0x7f849e301028)
+      0x7f849e500000 (0x7f849e501028-0x7f849e501028)
+      0x7f849e700000 (0x7f849e701028-0x7f849e701028)
+      0x7f849e900000 (0x7f849e901028-0x7f849e901028)
+      0x7f849eb00000 (0x7f849eb01028-0x7f849eb01028)
+      0x7f849ed00000 (0x7f849ed01028-0x7f849ed01028)
+      0x7f849ef00000 (0x7f849ef01028-0x7f849ef01028)
+      0x7f849f100000 (0x7f849f101028-0x7f849f101028)
+      0x7f849f300000 (0x7f849f301028-0x7f849f301028)
+      0x7f849f500000 (0x7f849f501028-0x7f849f501028)
+      0x7f849f700000 (0x7f849f701028-0x7f849f701028)
+      0x7f849f900000 (0x7f849f901028-0x7f849f901028)
+      0x7f849fb00000 (0x7f849fb01028-0x7f849fb01028)
+      0x7f849fd00000 (0x7f849fd01028-0x7f849fd01028)
+      0x7f849ff00000 (0x7f849ff01028-0x7f849ff01028)
+      0x7f84a0100000 (0x7f84a0101028-0x7f84a0101028)
+      0x7f84a0300000 (0x7f84a0301028-0x7f84a0301028)
+      0x7f84a0500000 (0x7f84a0501028-0x7f84a0501028)
+      0x7f84a0700000 (0x7f84a0701028-0x7f84a0701028)
+      0x7f84a0900000 (0x7f84a0901028-0x7f84a0901028)
+      0x7f84a0b00000 (0x7f84a0b01028-0x7f84a0b01028)
+      0x7f84a0d00000 (0x7f84a0d01028-0x7f84a0d01028)
+      0x7f84a0f00000 (0x7f84a0f01028-0x7f84a0f01028)
+      0x7f84a1100000 (0x7f84a1101028-0x7f84a1101028)
+      0x7f84a1300000 (0x7f84a1301028-0x7f84a1301028)
+      0x7f84a1500000 (0x7f84a1501028-0x7f84a1501028)
+      0x7f84a1700000 (0x7f84a1701028-0x7f84a1701028)
+      0x7f84a1900000 (0x7f84a1901028-0x7f84a1901028)
+      0x7f84a1b00000 (0x7f84a1b01028-0x7f84a1b01028)
+      0x7f84a1d00000 (0x7f84a1d01028-0x7f84a1d01028)
+      0x7f84a1f00000 (0x7f84a1f01028-0x7f84a1f01028)
+      0x7f84a2100000 (0x7f84a2101028-0x7f84a2101028)
+      0x7f84a2300000 (0x7f84a2301028-0x7f84a2301028)
+      0x7f84a2500000 (0x7f84a2501028-0x7f84a2501028)
+      0x7f84a2700000 (0x7f84a2701028-0x7f84a2701028)
+      0x7f84a2900000 (0x7f84a2901028-0x7f84a2901028)
+      0x7f84a2b00000 (0x7f84a2b01028-0x7f84a2b01028)
+      0x7f84a2d00000 (0x7f84a2d01028-0x7f84a2d01028)
+      0x7f84a2f00000 (0x7f84a2f01028-0x7f84a2f01028)
+      0x7f84a3100000 (0x7f84a3101028-0x7f84a3101028)
+      0x7f84a3300000 (0x7f84a3301028-0x7f84a3301028)
+      0x7f84a3500000 (0x7f84a3501028-0x7f84a3501028)
+      0x7f84a3700000 (0x7f84a3701028-0x7f84a3701028)
+      0x7f84a3900000 (0x7f84a3901028-0x7f84a3901028)
+      0x7f84a3b00000 (0x7f84a3b01028-0x7f84a3b01028)
+      0x7f84a3d00000 (0x7f84a3d01028-0x7f84a3d01028)
+      0x7f84a3f00000 (0x7f84a3f01028-0x7f84a3f01028)
+      0x7f84a4100000 (0x7f84a4101028-0x7f84a4101028)
+      0x7f84a4300000 (0x7f84a4301028-0x7f84a4301028)
+      0x7f84a4500000 (0x7f84a4501028-0x7f84a4501028)
+      0x7f84a4700000 (0x7f84a4701028-0x7f84a4701028)
+      0x7f84a4900000 (0x7f84a4901028-0x7f84a4901028)
+      0x7f84a4b00000 (0x7f84a4b01028-0x7f84a4b01028)
+      0x7f84a4d00000 (0x7f84a4d01028-0x7f84a4d01028)
+      0x7f84a4f00000 (0x7f84a4f01028-0x7f84a4f01028)
+      0x7f84a5100000 (0x7f84a5101028-0x7f84a5101028)
+      0x7f84a5300000 (0x7f84a5301028-0x7f84a5301028)
+      0x7f84a5500000 (0x7f84a5501028-0x7f84a5501028)
+      0x7f84a5700000 (0x7f84a5701028-0x7f84a5701028)
+      0x7f84a5900000 (0x7f84a5901028-0x7f84a5901028)
+      0x7f84a5b00000 (0x7f84a5b01028-0x7f84a5b01028)
+      0x7f84a5d00000 (0x7f84a5d01028-0x7f84a5d01028)
+      0x7f84a5f00000 (0x7f84a5f01028-0x7f84a5f01028)
+      0x7f84a6100000 (0x7f84a6101028-0x7f84a6101028)
+      0x7f84a6300000 (0x7f84a6301028-0x7f84a6301028)
+      0x7f84a6500000 (0x7f84a6501028-0x7f84a6501028)
+      0x7f84a6700000 (0x7f84a6701028-0x7f84a6701028)
+      0x7f84a6900000 (0x7f84a6901028-0x7f84a6901028)
+      0x7f84a6b00000 (0x7f84a6b01028-0x7f84a6b01028)
+      0x7f84a6d00000 (0x7f84a6d01028-0x7f84a6d01028)
+      0x7f84a6f00000 (0x7f84a6f01028-0x7f84a6f01028)
+      0x7f84a7100000 (0x7f84a7101028-0x7f84a7101028)
+      0x7f84a7300000 (0x7f84a7301028-0x7f84a7301028)
+      0x7f84a7500000 (0x7f84a7501028-0x7f84a7501028)
+      0x7f84a7700000 (0x7f84a7701028-0x7f84a7701028)
+      0x7f84a7900000 (0x7f84a7901028-0x7f84a7901028)
+      0x7f84a7b00000 (0x7f84a7b01028-0x7f84a7b01028)
+      0x7f84a7d00000 (0x7f84a7d01028-0x7f84a7d01028)
+      0x7f84a7f00000 (0x7f84a7f01028-0x7f84a7f01028)
+      0x7f84a8100000 (0x7f84a8101028-0x7f84a8101028)
+      0x7f84a8300000 (0x7f84a8301028-0x7f84a8301028)
+      0x7f84a8500000 (0x7f84a8501028-0x7f84a8501028)
+      0x7f84a8700000 (0x7f84a8701028-0x7f84a8701028)
+      0x7f84a8900000 (0x7f84a8901028-0x7f84a8901028)
+      0x7f84a8b00000 (0x7f84a8b01028-0x7f84a8b01028)
+      0x7f84a8d00000 (0x7f84a8d01028-0x7f84a8d01028)
+      0x7f84a8f00000 (0x7f84a8f01028-0x7f84a8f01028)
+      0x7f84a9100000 (0x7f84a9101028-0x7f84a9101028)
+      0x7f84a9300000 (0x7f84a9301028-0x7f84a9301028)
+      0x7f84a9500000 (0x7f84a9501028-0x7f84a9501028)
+      0x7f84a9700000 (0x7f84a9701028-0x7f84a9701028)
+      0x7f84a9900000 (0x7f84a9901028-0x7f84a9901028)
+      0x7f84a9b00000 (0x7f84a9b01028-0x7f84a9b01028)
+      0x7f84a9d00000 (0x7f84a9d01028-0x7f84a9d01028)
+      0x7f84a9f00000 (0x7f84a9f01028-0x7f84a9f01028)
+      0x7f84aa100000 (0x7f84aa101028-0x7f84aa101028)
+      0x7f84aa300000 (0x7f84aa301028-0x7f84aa301028)
+      0x7f84aa500000 (0x7f84aa501028-0x7f84aa501028)
+      0x7f84aa700000 (0x7f84aa701028-0x7f84aa701028)
+      0x7f84aa900000 (0x7f84aa901028-0x7f84aa901028)
+      0x7f84aab00000 (0x7f84aab01028-0x7f84aab01028)
+      0x7f84aad00000 (0x7f84aad01028-0x7f84aad01028)
+      0x7f84aaf00000 (0x7f84aaf01028-0x7f84aaf01028)
+      0x7f84ab100000 (0x7f84ab101028-0x7f84ab101028)
+      0x7f84ab300000 (0x7f84ab301028-0x7f84ab301028)
+      0x7f84ab500000 (0x7f84ab501028-0x7f84ab501028)
+      0x7f84ab700000 (0x7f84ab701028-0x7f84ab701028)
+      0x7f84ab900000 (0x7f84ab901028-0x7f84ab901028)
+      0x7f84abb00000 (0x7f84abb01028-0x7f84abb01028)
+      0x7f84abd00000 (0x7f84abd01028-0x7f84abd01028)
+      0x7f84abf00000 (0x7f84abf01028-0x7f84abf01028)
+      0x7f84ac100000 (0x7f84ac101028-0x7f84ac101028)
+      0x7f84ac300000 (0x7f84ac301028-0x7f84ac301028)
+      0x7f84ac500000 (0x7f84ac501028-0x7f84ac501028)
+      0x7f84ac700000 (0x7f84ac701028-0x7f84ac701028)
+      0x7f84ac900000 (0x7f84ac901028-0x7f84ac901028)
+      0x7f84acb00000 (0x7f84acb01028-0x7f84acb01028)
+      0x7f84acd00000 (0x7f84acd01028-0x7f84acd01028)
+      0x7f84acf00000 (0x7f84acf01028-0x7f84acf01028)
+      0x7f84ad100000 (0x7f84ad101028-0x7f84ad101028)
+      0x7f84ad300000 (0x7f84ad301028-0x7f84ad301028)
+      0x7f84ad500000 (0x7f84ad501028-0x7f84ad501028)
+      0x7f84ad700000 (0x7f84ad701028-0x7f84ad701028)
+      0x7f84ad900000 (0x7f84ad901028-0x7f84ad901028)
+      0x7f84adb00000 (0x7f84adb01028-0x7f84adb01028)
+      0x7f84add00000 (0x7f84add01028-0x7f84add01028)
+      0x7f84adf00000 (0x7f84adf01028-0x7f84adf01028)
+      0x7f84ae100000 (0x7f84ae101028-0x7f84ae101028)
+      0x7f84ae300000 (0x7f84ae301028-0x7f84ae301028)
+      0x7f84ae500000 (0x7f84ae501028-0x7f84ae501028)
+      0x7f84ae700000 (0x7f84ae701028-0x7f84ae701028)
+      0x7f84ae900000 (0x7f84ae901028-0x7f84ae901028)
+      0x7f84aeb00000 (0x7f84aeb01028-0x7f84aeb01028)
+      0x7f84aed00000 (0x7f84aed01028-0x7f84aed01028)
+      0x7f84aef00000 (0x7f84aef01028-0x7f84aef01028)
+      0x7f84af100000 (0x7f84af101028-0x7f84af101028)
+      0x7f84af300000 (0x7f84af301028-0x7f84af301028)
+      0x7f84af500000 (0x7f84af501028-0x7f84af501028)
+      0x7f84af700000 (0x7f84af701028-0x7f84af701028)
+      0x7f84af900000 (0x7f84af901028-0x7f84af901028)
+      0x7f84afb00000 (0x7f84afb01028-0x7f84afb01028)
+      0x7f84afd00000 (0x7f84afd01028-0x7f84afd01028)
+      0x7f84aff00000 (0x7f84aff01028-0x7f84aff01028)
+      0x7f84b0100000 (0x7f84b0101028-0x7f84b0101028)
+      0x7f84b0300000 (0x7f84b0301028-0x7f84b0301028)
+      0x7f84b0500000 (0x7f84b0501028-0x7f84b0501028)
+      0x7f84b0700000 (0x7f84b0701028-0x7f84b0701028)
+      0x7f84b0900000 (0x7f84b0901028-0x7f84b0901028)
+      0x7f84b0b00000 (0x7f84b0b01028-0x7f84b0b01028)
+      0x7f84b0d00000 (0x7f84b0d01028-0x7f84b0d01028)
+      0x7f84b0f00000 (0x7f84b0f01028-0x7f84b0f01028)
+      0x7f84b1100000 (0x7f84b1101028-0x7f84b1101028)
+      0x7f84b1300000 (0x7f84b1301028-0x7f84b1301028)
+      0x7f84b1500000 (0x7f84b1501028-0x7f84b1501028)
+      0x7f84b1700000 (0x7f84b1701028-0x7f84b1701028)
+      0x7f84b1900000 (0x7f84b1901028-0x7f84b1901028)
+      0x7f84b1b00000 (0x7f84b1b01028-0x7f84b1b01028)
+      0x7f84b1d00000 (0x7f84b1d01028-0x7f84b1d01028)
+      0x7f84b1f00000 (0x7f84b1f01028-0x7f84b1f01028)
+      0x7f84b2100000 (0x7f84b2101028-0x7f84b2101028)
+      0x7f84b2300000 (0x7f84b2301028-0x7f84b2301028)
+      0x7f84b2500000 (0x7f84b2501028-0x7f84b2501028)
+      0x7f84b2700000 (0x7f84b2701028-0x7f84b2701028)
+      0x7f84b2900000 (0x7f84b2901028-0x7f84b2901028)
+      0x7f84b2b00000 (0x7f84b2b01028-0x7f84b2b01028)
+      0x7f84b2d00000 (0x7f84b2d01028-0x7f84b2d01028)
+      0x7f84b2f00000 (0x7f84b2f01028-0x7f84b2f01028)
+      0x7f84b3100000 (0x7f84b3101028-0x7f84b3101028)
+      0x7f84b3300000 (0x7f84b3301028-0x7f84b3301028)
+      0x7f84b3500000 (0x7f84b3501028-0x7f84b3501028)
+      0x7f84b3700000 (0x7f84b3701028-0x7f84b3701028)
+      0x7f84b3900000 (0x7f84b3901028-0x7f84b3901028)
+      0x7f84b3b00000 (0x7f84b3b01028-0x7f84b3b01028)
+      0x7f84b3d00000 (0x7f84b3d01028-0x7f84b3d01028)
+      0x7f84b3f00000 (0x7f84b3f01028-0x7f84b3f01028)
+      0x7f84b4100000 (0x7f84b4101028-0x7f84b4101028)
+      0x7f84b4300000 (0x7f84b4301028-0x7f84b4301028)
+      0x7f84b4500000 (0x7f84b4501028-0x7f84b4501028)
+      0x7f84b4700000 (0x7f84b4701028-0x7f84b4701028)]]
+
+Fatal error: Unexpected exception in MonitorSupport.monitorEnter: java.lang.NullPointerException: null
+[CEnclavePool /home/ubuntu/graal-root/linux-sgx/psw/urts/enclave.cpp:629] enter CEnclavePool constructor
+[build_secs /home/ubuntu/graal-root/linux-sgx/psw/urts/loader.cpp:517] Enclave start addr. = 0x7f8400000000, Size = 0x200000000, 8388608 KB
+Enclave initializedExample of function ptr in the enclave: 0x7f8400030cd0
+>>>>>>>>>>>>>>>>>>> Creating global enclave isolate ...
+[ENCLAVE] pthread_getattr_np(tid: 140220747097920, attr: 0x7f848aaf8320)
+>>>>>>>>>> SGX thread id: 140207239315456
+>>>>>>>>>> POSIX thread id: 140220747097920
+Resource limit set: res: 7 cur = 1048576, max = 1048576
+Symbol: inet_pton
+>>>>>>>>>>>>>>>>>>> Global enclave isolate creation successfull!

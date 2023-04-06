@@ -1,0 +1,36 @@
+
+ ----------------------- Running scimark with SMALL workload:-----------------------------
+
+SciMark 2.0a
+
+Composite Score: 1032.975657888367
+FFT (1024): 1024.3668434511872
+SOR (100x100):   1265.0287154494918
+Monte Carlo : 23.611175740237872
+Sparse matmult (N=1000, nz=5000): 1348.303981852106
+LU (100x100): 1503.5675729488123
+
+java.vendor: Oracle Corporation
+java.version: 1.8.0_252
+os.arch: amd64
+os.name: Linux
+os.version: 4.15.0-132-generic
+ ----------------------- Running scimark with LARGE workload:-----------------------------
+
+SciMark 2.0a
+
+Composite Score: 897.0140467383811
+FFT (1048576): 330.07530734405543
+SOR (1000x1000):   1195.7328625024425
+Monte Carlo : 23.60909927017124
+Sparse matmult (N=100000, nz=1000000): 1320.2256153653607
+LU (1000x1000): 1615.4273492098755
+
+java.vendor: Oracle Corporation
+java.version: 1.8.0_252
+os.arch: amd64
+os.name: Linux
+os.version: 4.15.0-132-generic
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  Native Image Code End  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Enclave returned successfully

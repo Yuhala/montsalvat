@@ -1,0 +1,35 @@
+
+Real SGX
+ ----------------------- Running scimark with SMALL workload:-----------------------------
+
+SciMark 2.0a
+
+Composite Score: 1033.0665641219991
+FFT (1024): 1024.7429694099087
+SOR (100x100):   1265.0287401997255
+Monte Carlo : 23.602871555959407
+Sparse matmult (N=1000, nz=5000): 1348.39066649559
+LU (100x100): 1503.5675729488123
+
+java.vendor: Oracle Corporation
+java.version: 1.8.0_252
+os.arch: amd64
+os.name: Linux
+os.version: 4.15.0-132-generic
+ ----------------------- Running scimark with LARGE workload:-----------------------------
+
+SciMark 2.0a
+
+Composite Score: 895.8546018515106
+FFT (1048576): 332.9977513766433
+SOR (1000x1000):   1196.0827331420253
+Monte Carlo : 23.60702316530021
+Sparse matmult (N=100000, nz=1000000): 1321.6100844386804
+LU (1000x1000): 1604.9754171349043
+
+java.vendor: Oracle Corporation
+java.version: 1.8.0_252
+os.arch: amd64
+os.name: Linux
+os.version: 4.15.0-132-generic
+

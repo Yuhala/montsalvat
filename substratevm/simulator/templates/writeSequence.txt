@@ -1,0 +1,17 @@
+
+
+
+        String file = "/home/petman/projects/graal-tee/substratevm/simulator/write.txt";
+        int n = (int) Math.pow(2, 10);         
+        String test = "a\n";
+                
+        try (FileWriter fileWriter = new FileWriter(file,true)) {
+            for(int i = 0;i<n;i++){
+                fileWriter.write(test);
+            }            
+            fileWriter.close();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+
+    

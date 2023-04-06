@@ -1,0 +1,161 @@
+
+/*
+ * Created on Mon Jul 06 2020
+ *
+ * Copyright (c) 2020 Peterson Yuhala, IIUN
+ */
+
+/**
+ * This is a sample (dummy) smart contract application for transfering assets between peers.
+ * I use this to reason out clearly about code separation into trusted and untrusted parts.
+ */
+
+package iiun.smartc;
+
+import java.util.ArrayList;
+import iiun.smartc.*;
+
+import java.io.*;
+import java.util.Arrays;
+import java.util.HashMap;
+
+import org.graalvm.nativeimage.SecurityInfo;
+import org.graalvm.nativeimage.SGXSerializer;
+import org.graalvm.nativeimage.ProxyCleaner;
+import org.graalvm.nativeimage.SGXObjectTranslator;
+
+@SecurityInfo(security = "untrusted")
+public class Main {
+
+	// public static HashMap<Integer, CCharPointer> myMap = new HashMap<>();
+	public static HashMap<Integer, Trusted> gcObjects = new HashMap<>();
+
+	static void gcTest(int numObjects, int strLen) {
+
+		// Fill hashmap with int-string kv pairs
+		for (int i = 0; i < numObjects; i++) {
+			//String str = getRandString(strLen);
+			Trusted obj = new Trusted(i);
+			gcObjects.put(i, obj);
+		}
+
+		// Remove kv pairs from hashmap
+		for (int i = 0; i < numObjects; i++) {
+			gcObjects.remove(i);
+		}
+	}
+
+	// https://www.geeksforgeeks.org/generate-random-string-of-given-size-in-java/
+	public static String getRandString(int length) {
+		// chose a Character random from this String
+		String AlphaNumericString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" + "0123456789" + "abcdefghijklmnopqrstuvxyz";
+
+		// create StringBuffer size of AlphaNumericString
+		StringBuilder sb = new StringBuilder(length);
+
+		for (int i = 0; i < length; i++) {
+			// generate a random number between
+			// 0 to AlphaNumericString variable length
+			int index = (int) (AlphaNumericString.length() * Math.random());
+
+			// add Character one by one in end of sb
+			sb.append(AlphaNumericString.charAt(index));
+		}
+
+		return sb.toString();
+	}
+
+	public static void main(String[] args) throws InterruptedException {
+
+		ProxyCleaner.initProxyCleaners();
+
+		System.out.println("******* Graal sgx dummy smart contract:main ********");
+
+		//Peer p1 = new Peer("pete", 10);
+
+		int num = Integer.parseInt(args[0]);
+
+		gcTest(num, 8);
+
+		/**
+		 * Do GC out first, wait for some time, >> 1000ms, for the proxy cleaner to make mirror 
+		 * objects inside eligible.
+		 */
+		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>> Doing GC out <<<<<<<<<<<<<<<<<<<<<<<<<<<");
+		System.gc();
+
+		//pause for 2 secs or more
+		//Thread.sleep(2000);
+
+		//Trusted.doGCInside();
+
+		Thread.sleep(2000);
+		
+		//Trusted.getNum();
+		//Trusted.getNull();
+		
+
+
+		// System.out.println("Application class path:
+		// "+System.getProperty("java.class.path"));
+
+		// serialization tests
+
+		// ArrayList<Integer> list = new ArrayList<>();
+		// list.add(333);
+		// list.add(666);
+
+		/** Testing object parameters in class methods */
+
+		/** test: don't care object param (string) --> serialize param */
+		// Peer peer1 = new Peer(2222, "Yuhala/Peterson/Jr");
+		// Peer peer1 = new Peer("Yuhala/Peterson/Jr", 2222);
+		// peer1.sayMyName("Jane Doe");
+		// peer1.stringTest("myTestString", 1234);
+
+		/** test: don't care object param (list) --> serialize param */
+		// peer1.addAssets(list);
+
+		/** test: object return types --> serialize */
+		// String pName = peer1.getName();
+		// System.out.println("Peer1 name: " + pName);
+
+		/** test: object return types static methods */
+		// String str = Contract.sendGreetings();
+		// System.out.println("Result greetings: " + str);
+
+		/** test: don't care serializable --> serialize param */
+		// Asset asset1 = new Asset(1234, 111, 100);
+		// Contract ct = new Contract(101);
+		// ct.transferAsset(asset1, 222, 333);
+
+		/**
+		 * test: proxy class with concrete annotated type param of opposite security -->
+		 * case 1: if object not mirror, create associated proxy on the other side,
+		 * return its id and set proxy-mirror pair in registry case 2: if object is
+		 * mirror, send id of proxy
+		 */
+
+		// Person person1 = new Person("Dorothy Taylor");
+		// person1.setId(10);
+
+		/** test: proxy class with proxy param */
+		// ct.greetPeer(peer1);
+
+		/** test: proxy class with concrete type of opposite security: mirrors */
+		// ct.greetPerson(person1);
+
+		// Contract.ledger_init();
+		// test: static methods for proxy classes
+		/* for (int i = 0; i < 2; i++) {
+			Contract ct = new Contract(i);
+			Contract.hello("John Doe");
+		} */
+		
+
+		
+
+		ProxyCleaner.stopProxyCleaners();
+	}
+
+}

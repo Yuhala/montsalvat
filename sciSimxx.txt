@@ -1,0 +1,47 @@
+
+ ----------------------- Running scimark with SMALL workload (cache-contained abt 2M):-----------------------------
+
+SciMark 2.0a
+
+Composite Score: 1039.983400854534
+FFT (1024): 1026.325769713438
+SOR (100x100):   1266.067691863867
+Monte Carlo : 48.49782327685608
+Sparse matmult (N=1000, nz=5000): 1349.4318143975886
+LU (100x100): 1509.59390502092
+
+java.vendor: Oracle Corporation
+java.version: 1.8.0_252
+os.arch: amd64
+os.name: Linux
+os.version: 4.15.0-132-generic
+ ----------------------- Running scimark with MEDIUM workload (order of 8M):-----------------------------
+
+SciMark 2.0a
+
+Composite Score: 905.1010674669797
+FFT (1048576): 338.5982226392637
+SOR (1000x1000):   1196.199392918758
+Monte Carlo : 48.49782432137119
+Sparse matmult (N=100000, nz=1000000): 1319.16263279838
+LU (1000x1000): 1623.0472646571254
+
+java.vendor: Oracle Corporation
+java.version: 1.8.0_252
+os.arch: amd64
+os.name: Linux
+os.version: 4.15.0-132-generic
+ ----------------------- Running scimark with LARGE workload (order of 32M):-----------------------------
+
+
+
+SciMark 2.0a
+
+Composite Score: 562.5232999526413
+FFT (16777216): 276.0564173614587
+SOR (8192x8192):   1175.5572565270786
+Monte Carlo : 48.49782327685608
+Sparse matmult (N=800000, nz=16000000): 1312.5050025978132
+LU (8192x8192):  ERROR, INVALID NUMERICAL RESULT!
+
+
