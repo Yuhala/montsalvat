@@ -1,7 +1,7 @@
 
 ## About Montsalvat
 - `Montsalvat` is a tool for partitioning Java applications for Intel SGX enclaves. It leverages Java annotations for specifying `trusted` and `untrusted` classes, which undergo bytecode transformations which strip trusted classes of all untrusted functionality, and vice versa. The transformed classes are then ahead-of-time compiled to GraalVM native images which constitute the partitioned SGX application. 
-- The implementation of `Montsalvat` in this repository accompanies our paper [Montsalvat: Intel SGX shielding for GraalVM native images](https://dl.acm.org/doi/10.1145/3464298.3493406)published in the `22nd ACM/IFIP International Middleware Conference 2022`.
+- The implementation of `Montsalvat` in this repository accompanies our paper [Montsalvat: Intel SGX shielding for GraalVM native images](https://dl.acm.org/doi/10.1145/3464298.3493406) published in the `22nd ACM/IFIP International Middleware Conference 2022`.
 
 <!-- # Graal SGX Project
 - `Project progress`: ![85%](https://progress-bar.dev/85)
