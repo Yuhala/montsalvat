@@ -64,7 +64,7 @@ enum OBJTYPE {
     MIRROR,
 
     /**
-     * Object belongs to a don't care class: ie concrete unannotated class. These
+     * Object belongs to a neutral class: ie concrete unannotated class. These
      * object parameters will be serialized
      */
     DONTCARE
@@ -1785,7 +1785,7 @@ public class JAssistClassTransformer {
         boolean mirror = (secClass && unsecObjClass) || (unsecClass && secObjClass);
 
         if (dontCare) {
-            // default: don't care class
+            // default: neutral class
         } else if (proxy) {
             ret = OBJTYPE.PROXY;
         } else if (mirror) {

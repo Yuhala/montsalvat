@@ -107,13 +107,13 @@ public class Main {
 
 		/** Testing object parameters in class methods */
 
-		/** test: don't care object param (string) --> serialize param */
+		/** test: neutral object param (string) --> serialize param */
 		// Peer peer1 = new Peer(2222, "Yuhala/Peterson/Jr");
 		// Peer peer1 = new Peer("Yuhala/Peterson/Jr", 2222);
 		// peer1.sayMyName("Jane Doe");
 		// peer1.stringTest("myTestString", 1234);
 
-		/** test: don't care object param (list) --> serialize param */
+		/** test: neutral object param (list) --> serialize param */
 		// peer1.addAssets(list);
 
 		/** test: object return types --> serialize */

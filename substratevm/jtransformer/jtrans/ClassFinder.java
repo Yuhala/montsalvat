@@ -144,7 +144,7 @@ public class ClassFinder {
                 Class<?> clazz = Class.forName(cname, false, this.loader);
                 SecurityInfo info = (SecurityInfo) clazz.getAnnotation(SecurityInfo.class);
                 if (info == null) {
-                    // Don't care class: will not be modified
+                    // neutral class: will not be modified
                     continue;
                 }
                 if (isTrustedClass(info)) {

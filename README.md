@@ -98,9 +98,9 @@ source config-env
 
 - As a result, every untrusted object created in the trusted runtime is simply a `proxy` for the real (`mirror`) copy/object in the untrusted runtime and vice versa. The mirror objects are stored in a registry together with the hash/id of the corresponding proxy in the opposite runtime. Thus each time a proxy calls an instance method a transition is done, the corresponding mirror object is located in the registry and the instance method is called on it. For static methods, the registry is not used; the corresponding method is simply called on the class. All this is done automatically by our bytecode transformer so the programmer need not worry about these technical details. All they need to do is annotate their classes accordingly or simply provide a list of trusted and untrusted classes.
 
-- Methods of unannotated classes (`don't care classes`) will be compiled fully in any runtime if they are reachable there. For example JDK utility methods. As a result unannotated class objects will not have any proxy/mirror variants.
+- Methods of unannotated classes (`neutral classes`) are compiled fully in any runtime if they are reachable there. For example JDK utility methods. As a result unannotated class objects will not have any proxy/mirror variants.
 
-- Primitive and object types can be passed as parameters. However we still have issues with object return types. Don't-care objects are all serialized when passed across the enclave boundary and recreated at the other side.
+- Primitive and object types can be passed as parameters. However we still have issues with object return types. Neutral objects are all serialized when passed across the enclave boundary and recreated at the other side.
 
 - Many other interesting things are done under the hood by our system, but are out of the scope of this simple tutorial. The full internal workings of the system will be described in a corresponding paper.
 
