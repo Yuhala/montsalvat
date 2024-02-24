@@ -1,4 +1,9 @@
-# Graal SGX Project
+
+## About Montsalvat
+- `Montsalvat` is a tool for partitioning Java applications for Intel SGX enclaves. It leverages Java annotations for specifying `trusted` and `untrusted` classes, which undergo bytecode transformations which strip trusted classes of all untrusted functionality, and vice versa. The transformed classes are then ahead-of-time compiled to GraalVM native images which constitute the partitioned SGX application. 
+- The implementation of `Montsalvat` in this repository accompanies our paper [Montsalvat: Intel SGX shielding for GraalVM native images](https://dl.acm.org/doi/10.1145/3464298.3493406)published in the `22nd ACM/IFIP International Middleware Conference 2022`.
+
+<!-- # Graal SGX Project
 - `Project progress`: ![85%](https://progress-bar.dev/85)
 - This branch represents a modification of graal vm CE to run full native images in Intel SGX enclaves.
 
@@ -14,7 +19,11 @@
 - [ ] Validating our approach with a motivating example e.g executing smart contracts.
 - [ ] Adding PM functionality to our system. 
 
-- [Meeting reports](docs/meetings/README.md)
+<!--- [Meeting reports](docs/meetings/README.md)-->
+
+
+## Disclaimer
+- `Montsalvat` is not actively being developed. This means several errors will probably be encountered while trying to setup and build the system for testing. In case you come across such issues, please contact me at `petersonyuhala@gmail.com`
 
 ## Substrate VM
 - Substrate VM is the component which creates native images and is the core repo we are working on.
@@ -25,17 +34,16 @@
 - Clone this repo to a directory in local environment, which we will call `graal-sgx-root`. Unless stated otherwise, all `cd` commands assume `graal-sgx-root` as the top working directory.
 ```
 mkdir graal-sgx-root && cd graal-sgx-root
-git clone https://gitlab.com/Yuhala/graal-tee.git
+git clone https://github.com/Yuhala/montsalvat.git
 
 
 ```
-- Enter your credentials if asked: gitlab username + password.
 
 ### SGX Installation
 - We created a script to install SGX for Ubuntu based systems: `16.04`, `18.04`, and `20.04`. It was tested on both `18.04` and `20.04`
-- Copy the `sgx-install.sh` script from `graal-tee` folder into `graal-sgx-root`: 
+- Copy the `sgx-install.sh` script from `montsalvat` folder into `graal-sgx-root`: 
 ```
-cp graal-tee/sgx-install.sh .
+cp montsalvat/sgx-install.sh .
 
 ```
 - The script by default will install SGX tools with debug information included. To install the tools without debug information, change the value of `debug_info` to `0`.
@@ -55,7 +63,7 @@ cp graal-tee/sgx-install.sh .
 git clone https://github.com/graalvm/mx.git
 
 ```
-- GraalVM's JIT compiler works with the default JVM as a plugin with the help of the JVM compiler interface (JVMCI), and thus requires a JDK which supports a graal-compatible version of JVMCI. You can find a compatible version in the `graal-tee` folder: `openjdk-8u282+08-jvmci-21.1-b01-linux-amd64.tar.gz`. Other compatible versions can be found here: [jvmci releases](https://github.com/graalvm/graal-jvmci-8/releases).
+- GraalVM's JIT compiler works with the default JVM as a plugin with the help of the JVM compiler interface (JVMCI), and thus requires a JDK which supports a graal-compatible version of JVMCI. You can find a compatible version in the `montsalvat` folder: `openjdk-8u282+08-jvmci-21.1-b01-linux-amd64.tar.gz`. Other compatible versions can be found here: [jvmci releases](https://github.com/graalvm/graal-jvmci-8/releases).
 
 - Copy and extract this file in `graal-sgx-root`.
 
@@ -133,3 +141,4 @@ make clean && make
 ## Other resources
 - Article on Graal compiler by Chris Seaton: https://chrisseaton.com/truffleruby/jokerconf17/
 - Medium article on native images by Christian Wimmer: https://medium.com/graalvm/isolates-and-compressed-references-more-flexible-and-efficient-memory-management-for-graalvm-a044cc50b67e
+
