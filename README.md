@@ -1,6 +1,6 @@
 
 ## About Montsalvat
-- `Montsalvat` is a tool for partitioning Java applications for Intel SGX enclaves. It leverages Java annotations for specifying `trusted` and `untrusted` classes, which undergo bytecode transformations which strip trusted classes of all untrusted functionality, and vice versa. The transformed classes are then ahead-of-time compiled to GraalVM native images which constitute the partitioned SGX application. 
+- `Montsalvat` is a tool for partitioning Java applications for Intel SGX enclaves so as to achieve TCB reduction. It leverages Java annotations for specifying `trusted` and `untrusted` classes, which undergo bytecode transformations which strip trusted classes of all untrusted functionality, and vice versa. The transformed classes are then ahead-of-time compiled to GraalVM native images which constitute the partitioned SGX application. 
 - The implementation of `Montsalvat` in this repository accompanies our paper [Montsalvat: Intel SGX shielding for GraalVM native images](https://dl.acm.org/doi/10.1145/3464298.3493406) published in the `22nd ACM/IFIP International Middleware Conference 2022`.
 
 <!-- # Graal SGX Project
@@ -22,8 +22,8 @@
 <!--- [Meeting reports](docs/meetings/README.md)-->
 
 
-## Disclaimer
-- `Montsalvat` is not actively being developed. This means several errors will probably be encountered while trying to setup and build the system for testing. In case you come across such issues, please contact me at `petersonyuhala@gmail.com`
+<!--## Disclaimer
+- `Montsalvat` is not actively being developed. This means several errors will probably be encountered while trying to setup and build the system for testing. In case you come across such issues, please contact me at `petersonyuhala@gmail.com`-->
 
 ## Substrate VM
 - Substrate VM is the component which creates native images and is the core repo we are working on.
@@ -141,4 +141,8 @@ make clean && make
 ## Other resources
 - Article on Graal compiler by Chris Seaton: https://chrisseaton.com/truffleruby/jokerconf17/
 - Medium article on native images by Christian Wimmer: https://medium.com/graalvm/isolates-and-compressed-references-more-flexible-and-efficient-memory-management-for-graalvm-a044cc50b67e
+
+
+## Troubleshooting
+- In case you come across such issues, please contact me at `petersonyuhala@gmail.com`
 
